@@ -23,7 +23,7 @@ a{
 }
 /* sticky menu */
 .stickyMenu{
-  overflow: hidden;
+  overflow: visible;
   transition: 1s;
   position: fixed;
   top: -1px;
@@ -45,7 +45,7 @@ a{
 .stickyTodaysSpecial{
   color: rgb(182,9,113);
   font-family: 'WorkSans-Bold';
-  margin-left: 7.4vw;
+  margin-left: 6.4vw;
 }
 .stickyTodaysSpecial p{
   font-size:1.341vw;
@@ -67,6 +67,41 @@ a{
 }
 .stickyMenuNav a:hover{
   color: rgb(182,9,113);
+}
+
+.stickySocialMedia{
+  transition: 1s;
+  position: absolute;
+  top: -10vw;
+  right: 14.2vw;
+  border: 1px solid red;
+}
+.stickySocialMedia .fa-facebook,.stickySocialMedia .fa-twitter,.stickySocialMedia .fa-instagram{
+  width: 2vw;
+  height: 2.7vw;
+  font-size: 2vw;
+  padding-top: 0.5vw;
+  padding-left: 0.3vw;
+  margin-right: 0.81vw;
+  background-color: rgb(235,221,84,0.5);
+}
+
+.stickyLogin{
+  position: absolute;
+  top: 0px;
+  right: 4vw;
+  font-family: 'WorkSans-Bold';
+  border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+  font-size: 0.96vw;
+  color: white;
+}
+.loginPng{
+  margin-left: 1vw;
+  background-image: url('img/png/loginButton.png');
+  width: 1.2vw;
+  height: 1vw;
 }
 /* MAIN MAIN MAIN */
 main{
