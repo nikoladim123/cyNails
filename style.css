@@ -23,7 +23,7 @@ a{
 }
 /* sticky menu */
 .stickyMenu{
-  overflow: visible;
+  overflow: hidden;
   transition: 1s;
   position: fixed;
   top: -1px;
