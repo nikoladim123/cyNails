@@ -522,7 +522,7 @@ main{
   background-image: url('../img/png/lipstick.png');
 }
 .blurBox{
-  z-index: 1;
+  z-index: 2;
   box-shadow: inset 0px 0px 1.2vw 0.9vw rgb(247,200,197);
   position: absolute;
   top: 0px;
@@ -623,6 +623,10 @@ main{
 }
 .bestSellers .leftImage{
   background-image: url('../img/png/car-two/carTwoLeftPic.png');
+}
+
+.bestSellers .blurBox{
+  box-shadow: inset 0px 0px 1.2vw 0.9vw rgb(249,216,193);
 }
 
 .bestSellers .firstCarPicOne{background-image: url('../img/png/car-two/carTwoPicOne.png');}
