@@ -37,6 +37,9 @@ p{
   font-family: 'WorkSans-Regular';
   color: rgb(85,85,85);
 }
+button:hover{
+  cursor: pointer;
+}
 /* sticky menu */
 .stickyMenu{
   overflow: hidden;
@@ -59,11 +62,11 @@ p{
   z-index: 11;
 }
 .stickyTodaysSpecial{
-  color: rgb(182,9,113);
   font-family: 'WorkSans-Bold';
   margin-left: 6.4vw;
 }
 .stickyTodaysSpecial p{
+  color: rgb(182,9,113);
   font-size:1.341vw;
 }
 .stickyMenuNav{
@@ -122,6 +125,9 @@ p{
   background-image: url('../img/png/loginButton.png');
   width: 1.2vw;
   height: 1vw;
+}
+.stickyLogin:hover{
+  cursor: pointer;
 }
 /* MAIN MAIN MAIN */
 main{
@@ -417,6 +423,7 @@ main{
   height: 4.825vw;
   border: 1px solid rgb(232,226,126);
   background-color: rgb(232,226,126);
+  z-index: 1;
 }
 .greatBuysButton:hover{
   cursor: pointer;
@@ -1043,4 +1050,118 @@ footer span{
   position: relative;
   top:0.25vw;
   font-size: 2vw;
+}
+/* display none for desktop rules */
+.burgerMenuMobile,
+.makeAppointentMobile
+{
+  display: none;
+}
+/* PORTRAIT BREAKPOINT */
+/* PORTRAIT BREAKPOINT */
+/* PORTRAIT BREAKPOINT */
+@media(orientation:portrait){
+  .stickyMenuNav,
+  .stickyLogin,
+  #stickySocialMedia,
+  .appointmentButton,
+  .laquer,
+  .nailsPng,
+  .numberCover,
+  .laquerText,
+  .triangleBox,
+  .price
+  {
+    display: none;
+  }
+  .burgerMenuMobile{
+    position: absolute;
+    display: block;
+    width: 12.5vw;
+    top:5vw;
+    right:6.4vw;
+  }
+  .burgerMenuMobile div{
+    float: right;
+    margin-bottom: 1.1vw;
+    width: 100%;
+    height: 1.1vw;
+    background-color: rgb(240,0,96);
+  }
+  .burgerMenuMobile div:nth-child(1){
+    width: 65%;
+  }
+  .stickyMenu{
+    border-color: rgb(240,0,96);
+  }
+  .stickyTodaysSpecial p{
+    font-size: 5.5vw;
+    color: rgb(240,0,96);
+  }
+
+  main{
+    background-image: url('../img/mobile-img/mainBG.jpg');
+    height: 181.25vw;
+  }
+  .makeAppointentMobile{
+    position: absolute;
+    display: flex;
+    bottom: 2vw;
+    right: 2vw;
+  }
+  .makeAppointentMobile p{
+    font-family: 'WorkSans-Bold';
+    font-size: 4vw;
+    margin-right: 2vw;
+    margin-bottom: 0;
+    color: rgb(255,172,162);
+  }
+  .appointmentsMobilePNG{
+    background-image: url('../img/mobile-img/mobilePng/appointments.png');
+    width: 12vw;
+    height: 12vw;
+  }
+  /* SPECIAL OFFER SECTION!MOBILE */
+  .specialOfferSection{
+    position: relative;
+    min-height: 348vw;
+  }
+  .specialOfferSection h2{
+    font-size: 12vw;
+  }
+  .specialOfferSection p{
+    font-size: 5vw;
+  }
+  .linePng{
+    width: 50vw;
+    height: 5vw;
+    left: -25vw;
+  }
+
+  .gridContainer{
+    position: relative;
+    height: 100%;
+  }
+  .gridBox>div{
+    display: none;
+  }
+  .gridBox{
+    display: block;
+    position: absolute;
+    background-image: url('../img/six-image-grid/olay.jpg');
+    background-size: 100% 110%;
+    top:8vw;
+    left: -34.375vw;
+    margin-left: 50%;
+    width: 68.75vw;
+    height:90.625vw;
+    border: 2px solid yellow;
+  }
+  .growth{
+    position: absolute;
+    height: 200vw;
+    width: 100%;
+    left: 0;
+    top: 120vw;
+  }
 }
