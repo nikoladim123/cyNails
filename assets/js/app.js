@@ -5,7 +5,7 @@ window.onscroll = function(){
 
 //sticky menu
 var stickyMenu = document.getElementsByClassName('stickyMenu')[0];
-var stickySocialMedia = document.getElementsByClassName('stickySocialMedia')[0];
+var stickySocialMedia = document.getElementById('stickySocialMedia');
 var stickySwitch = 0;
 function stickyMenuFunc(){
   if(this.oldScroll > this.scrollY && window.scrollY > 1 && stickySwitch===0){

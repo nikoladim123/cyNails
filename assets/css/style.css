@@ -14,7 +14,7 @@
 body{
   margin: 0;
 }
-div,main{
+div,main,section{
   background-size: 100% 100%;
   /* border: 1px solid black; */
 }
@@ -101,6 +101,9 @@ p{
   background-color: rgb(235,221,84,0.5);
   color: white;
 }
+.fa:hover{
+  cursor: pointer;
+}
 
 .stickyLogin{
   position: absolute;
@@ -110,6 +113,8 @@ p{
   display: flex;
   align-items: center;
   font-size: 0.96vw;
+}
+.stickyLogin p{
   color: white;
 }
 .loginPng{
@@ -375,6 +380,8 @@ main{
   grid-gap: 1.633vw;
 }
 .gridBox>div{
+  background-size: 100% 93%;
+  background-repeat: no-repeat;
   position: relative;
   text-align: center;
   border: 1px solid rgb(232,226,126);
@@ -757,6 +764,7 @@ main{
 
 /*  SECTION NEWS AND EVENTS */
 .newsAndEventsSection{
+  position: relative;
   /* border: 1px solid green; */
 }
 .newsAndEventsSection a{
@@ -767,6 +775,7 @@ main{
 .pinkBox{
   position: relative;
   margin-top: 6.31vw;
+  padding-top: 0.1px;
   background-color: rgb(248,243,239);
   width: 100%;
   height: 74.23vw;
@@ -854,6 +863,7 @@ main{
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin-bottom: 5.716vw;
 }
 
 .carThreeArrowContainer>div{
@@ -866,4 +876,170 @@ main{
 }
 #carThreeRightArrow{
   transform: rotate(180deg);
+}
+/* BODY CREAM SECTION */
+.bodyCream{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 59.39vw;
+  margin-bottom: 5.2vw;
+  background: radial-gradient(ellipse at center, rgba(247,237,195,1) 0%, rgba(255,221,135,1) 100%);
+}
+.narrowDivBG{
+  width: 120vw;
+  position: absolute;
+  height: 20vw;
+  bottom: -5vw;
+  left: -20vw;
+  background-color: rgb(223,154,135);
+  border-top: 0.37vw solid white;
+  transform: rotate(7deg);
+}
+
+.bodyCreamTextBox{
+  margin-left: 15.6vw;
+}
+.bodyCreamTextBox h2{
+  color: white;
+  font-size: 10vw;
+  margin: 0;
+  margin-top: 3vw;
+  text-shadow: 0px 0.5vw 2px rgba(0,0,0,0.3);
+  transform: scaleY(0.7);
+}
+.bodyCreamTextBox p{
+  color: rgb(234,183,109);
+  font-size: 2vw;
+  margin: 0;
+  margin-left: 1.11vw;
+  margin-top: -2.5vw;
+}
+
+.priceOff{
+  position: absolute;
+  width: 15.59vw;
+  height: 15.59vw;
+  border-radius: 50%;
+  left: -7.8vw;
+  top: 13vw;
+  margin-left: 61%;
+  text-align: center;
+  background-color: rgb(241,189,143);
+}
+.priceOff p{
+  margin: 0;
+  font-size: 5vw;
+  color: black;
+}
+.priceOff p:nth-child(1){
+  margin-top: 1vw;
+}
+.priceOff p:nth-child(2){
+  margin-top: -1vw;
+}
+.BBcream{
+  position: absolute;
+  width: 20vw;
+  height: 35vw;
+  margin-left: 50%;
+  left: -11.4vw;
+  background-image: url('../img/png/BBcream.png');
+  top: 11.5vw;
+}
+
+.regularPriceTextBox{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+.regularPriceTextBox a{
+  display:block;
+  color: rgb(101,81,75);
+  font-size: 1.3vw;
+  margin-top: 2.969vw;
+  margin-bottom: 1.9vw;
+}
+.regularPriceTextBox p{
+  color: white;
+  margin: 0;
+  font-size: 1.3vw;
+}
+.regularPriceTextBox span{
+  color: rgb(243,238,163);
+}
+/* NEED HELP? SECTION  */
+.needHelpSection{
+  position: relative;
+  height: 27.83vw;
+  border-top: 0.37vw solid rgb(243,230,228);
+  background-color: rgb(245,236,235);
+}
+.needHelpSection .stickySocialMedia{
+  position: absolute;
+  top: -0.37vw;
+  right: 2.86vw;
+}
+
+nav{
+  margin-top: 1.48vw;
+  width: 57vw;
+  display: flex;
+  justify-content: space-between;
+}
+nav h4{
+  font-family: 'WorkSans-Regular';
+  color: rgb(223,154,135);
+  font-size: 2.22vw;
+  margin: 0;
+  margin-bottom: 1vw;
+}
+nav p{
+  font-size: 1.18vw;
+  margin: 0;
+}
+nav a{
+  color: rgb(85,85,85);
+  font-size: 1.3vw;
+}
+nav div:nth-child(1){
+  position: relative;
+  left: 3.93vw;
+}
+nav div:nth-child(2){
+  position: relative;
+  right: 3.6vw;
+}
+/* FOOTER */
+footer{
+  position: relative;
+  width: 100%;
+  height: 11.65vw;
+  background-color: rgb(62,32,76);
+}
+
+footer .nailsPng{
+  position: relative;
+  width: 15.367vw;
+  height: 4.825vw;
+  margin-left: 50%;
+  top:2.227vw;
+  left:-7.68vw;
+}
+
+footer p{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: rgb(172,172,172,0.5);
+  margin-bottom: 0px;
+  font-size: 1.1vw;
+}
+
+footer span{
+  position: relative;
+  top:0.25vw;
+  font-size: 2vw;
 }
