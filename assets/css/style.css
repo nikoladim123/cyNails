@@ -202,7 +202,8 @@ main{
   font-size: 1.5vw;
   margin-right: 2vw;
   margin-top: 3vw;
-  color: rgb(255,172,162);
+  opacity: 0.5;
+  color: white;
 }
 /*  lineDownAnim animations*/
 .lineDownAnim{
