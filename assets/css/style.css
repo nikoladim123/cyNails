@@ -19,8 +19,10 @@
   font-family: 'WorkSans-SemiBold';
   src:url('../fonts/WorkSans-ExtraBold.otf') format('truetype');
 }
+
 body{
   margin: 0;
+  font-family: 'WorkSans-Regular';
 }
 div,main,section{
   background-size: 100% 100%;
@@ -54,6 +56,9 @@ p{
   font-family: 'WorkSans-Regular';
   color: rgb(85,85,85);
 }
+button{
+  font-family: 'WorkSans-Regular';
+}
 button:hover{
   cursor: pointer;
 }
@@ -68,7 +73,7 @@ button:hover{
   height: 0vw;
   background-color: rgb(52,11,76,0.9);
   z-index: 10;
-  border-bottom: 1px solid rgb(182,9,113);
+  border-bottom: 1px solid rgb(209,127,100);
 }
 .stickyMenuInside{
   position: absolute;
@@ -83,7 +88,7 @@ button:hover{
   margin-left: 6.4vw;
 }
 .stickyTodaysSpecial p{
-  color: rgb(182,9,113);
+  color: rgb(209,127,100);
   font-size:1.341vw;
 }
 .stickyMenuNav{
@@ -97,12 +102,12 @@ button:hover{
 }
 .stickyMenuNav a{
   transition: 0.35s;
-  color:white;
+  color:rgb(209,127,100);
   font-family: 'WorkSans-Regular';
   font-size: 1.3vw;
 }
 .stickyMenuNav a:hover{
-  color: rgb(182,9,113);
+  color: white;
 }
 
 .stickySocialMedia{
@@ -135,7 +140,7 @@ button:hover{
   font-size: 0.96vw;
 }
 .stickyLogin p{
-  color: white;
+  color: rgb(209,127,100);
 }
 .loginPng{
   margin-left: 1vw;
@@ -163,7 +168,7 @@ main{
 .numberCover{
   font-family: 'WorkSans-Regular';
   font-size: 1.9vw;
-  color:white;
+  color:rgb(209,127,100);
   margin: 0vw;
   margin-left: 6.4vw;
 }
@@ -176,7 +181,7 @@ main{
 }
 .laquerText{
   font-family: 'WorkSans-Regular';
-  color: white;
+  color: rgb(209,127,100);
   font-size: 1.26vw;
   margin: 0;
   margin-left: 5.5vw;
@@ -430,7 +435,8 @@ main{
   left: -8.35vw;
   width: 16.69vw;
   height: 2.07vw;
-  margin-top: 1vw;
+  margin-top: 0vw;
+  margin-bottom: 2vw;
 }
 
 .gridContainer{
@@ -1157,10 +1163,16 @@ main{
 }
 .needHelpSection .stickySocialMedia{
   position: absolute;
-  top: -0.37vw;
+  top: 4.97vw;
   right: 2.86vw;
 }
+.needHelpSection .stickySocialMedia .fa-facebook,
+.needHelpSection .stickySocialMedia .fa-twitter,
+.needHelpSection .stickySocialMedia .fa-instagram{
+  background-color: rgb(236,222,96);
+}
 .needHelpSection .advertBox{
+  margin-top: 0;
   background-color: white;
   outline: 0.9vw solid rgb(213,213,213);
   z-index: 3;
@@ -1168,7 +1180,7 @@ main{
 }
 
 nav{
-  margin-top: 1.48vw;
+  margin-top: 6.68vw;
   width: 57vw;
   display: flex;
   justify-content: space-between;
@@ -1628,6 +1640,9 @@ footer span{
   }
   .carDivOne, .carDivTwo, .carDivThree{
     height: 70vw;
+  }
+  .YellowSquare{
+
   }
   #hideMobile{
     display: none;
