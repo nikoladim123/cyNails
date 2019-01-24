@@ -1,5 +1,13 @@
 /* font-family: 'Oranienbaum', serif; */
 @font-face {
+  font-family: 'WorkSans-Hairline';
+  src:url('../fonts/WorkSans-Hairline.otf') format('truetype');
+}
+@font-face {
+  font-family: 'WorkSans-Thin';
+  src:url('../fonts/WorkSans-Thin.otf') format('truetype');
+}
+@font-face {
   font-family: 'WorkSans-Regular';
   src:url('../fonts/WorkSans-Regular.otf') format('truetype');
 }
@@ -32,6 +40,15 @@ h3{
   font-family: 'Oranienbaum', serif;
   color: rgb(85,85,85);
   margin: 0;
+}
+h4{
+  font-size: 7.43vw;
+  font-family: 'WorkSans-Thin';
+  margin: 0;
+  color: rgb(244,164,163);
+}
+h4 span{
+  font-family: 'WorkSans-Regular';
 }
 p{
   font-family: 'WorkSans-Regular';
@@ -164,44 +181,44 @@ main{
   margin: 0;
   margin-left: 5.5vw;
 }
-.appointmentButton{
+.makeAppointentMobile{
+  display: flex;
   position: absolute;
-  width: 24.888vw;
-  height: 3.725vw;
-  background-color: white;
-  text-align: center;
-  left: 62.89vw;
-  top: 38.6vw;
+  bottom: 1vw;
+  right: 6.31vw;
 }
-.appointmentButton:hover{
-  cursor: pointer;
+.appointmentsMobilePNG{
+  background-image: url('../img/mobile-img/mobilePng/appointments.png');
+  width: 5vw;
+  height: 5vw;
 }
-.appointmentButton p{
-  font-family: 'WorkSans-Regular';
-  font-size: 1.86vw;
-  margin: 0;
-  margin-top: 0.7vw;
-  margin-left: -0.5vw;
-  color: rgb(70,70,70);
-}
-.GO{
-  background-color: rgba(216,5,110);
-  height: 3.8vw;
-  width: 10vw;
-  border-radius: 2vw;
-  position: absolute;
-  top: -1px;
-  left: 23vw;
-}
-
-.GO p{
+.makeAppointentMobile p{
   font-family: 'WorkSans-Bold';
-  color:white;
-  font-size: 2.1vw;
-  margin: 0;
-  margin-top: 0.5vw;
+  font-size: 1.5vw;
+  margin-right: 2vw;
+  margin-top: 3vw;
+  color: rgb(255,172,162);
 }
-
+/*  lineDownAnim animations*/
+.lineDownAnim{
+  position: absolute;
+  width: 1px;
+  height: 10vw;
+  background-color: rgb(236,214,15);
+  left: 48.29vw;
+  top: 34vw;
+  animation-name: lineDownAnim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes lineDownAnim{
+  0%{
+    height: 1vw;
+  }
+  100%{
+    height: 10vw;
+  }
+}
 /* triangle anim */
 .triangleBox{
   transform: rotate(45deg);
@@ -244,13 +261,106 @@ main{
   }
 }
 /* triangle anim end*/
+/* whatWeSellBnd bnd */
+.whatWeSellBnd h4{
+  font-weight: 100;
+  margin-top: 11vw;
+  margin-left: 15vw;
+}
+.whatWeSellBnd h4 span{
+  font-family: 'Oranienbaum', serif;
+}
+/* BRIDAL SECTION */
+.bridalSection{
+  position: relative;
+}
+.bridalSection h4{
+  font-weight: 100;
+  font-family: 'WorkSans-Thin';
+  margin-top: 13.37vw;
+  margin-left: 18.58vw;
+}
+.bridalSection h4 span{
+  font-family: 'Oranienbaum', serif;
+}
+.bridalImage{
+  position: relative;
+  padding-top: 0.1px;
+  width: 100%;
+  height: 47.58vw;
+}
+.bridal{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../img/bridal/bridal.jpg'); */
+}
+.bridalOne,
+.bridalTwo,
+.bridalThree,
+.bridalFour{
+  display: block;
+  transition: 1s;
+  opacity: 0;
+}
+.bridalOne{background-image: url('../img/bridal/skinCare.jpg');}
+.bridalTwo{background-image: url('../img/bridal/manicure.jpg');}
+.bridalThree{background-image: url('../img/bridal/pedicure.jpg');}
+.bridalFour{background-image: url('../img/bridal/bridal.jpg');}
+
+
+.bridalOverLay{
+  position: absolute;
+  background-color: rgb(209,254,221,0.32);
+  border: 1px solid rgb(214,243,217);
+  width: 52vw;
+  height: 34.94vw;
+  margin-left: 23.8vw;
+  margin-top: 8.92vw;
+}
+.bridalHugeFont{
+  transition: 0.5s;
+  opacity: 1;
+  font-family: 'Oranienbaum', serif;
+  font-size: 11.5vw;
+  text-align: center;
+  margin-top: 4.5vw;
+  color: white;
+}
+.allGenderText{
+  position: absolute;
+  left: 0;
+  bottom: 6vw;
+  background-color: rgb(255,255,255,0.2);
+  height: 4.46vw;
+  display: flex;
+  align-content: center;
+}
+.allGenderText p{
+  margin-left: 1.48vw;
+  margin-right: 11.9vw;
+  font-size: 1.5vw;
+  color: black;
+}
+.moreInfoButton{
+  position: absolute;
+  border: none;
+  background-color: rgb(209,254,221,0.7);
+  width: 15.61vw;
+  height: 4.23vw;
+  font-size: 1.48vw;
+  bottom: 5.2vw;
+  right: 5.94vw;
+}
+
 /* whatWeDo whatWeDo whatWeDo whatWeDo */
 .whatWeDo{
   height: 45.9vw;
   display: flex;
   padding-left: 12.62vw;
   padding-right: 12.62vw;
-  padding-top: 2.22vw;
 }
 
 .whatWeDoOne{
@@ -291,20 +401,24 @@ main{
   padding-top: 0.1px;
   font-family: 'WorkSans-Regular';
   position: relative;
-  height: 69.8vw;
+  height: 68.77vw;
   background-color: rgb(243,235,226);
 }
-.specialOfferSection h2{
+.specialOfferSection h4{
+  font-weight: 100;
+  font-family: 'WorkSans-Thin';
+  margin-top: -4.4vw;
+  margin-left: 16.72vw;
+  font-size: 7vw;
+}
+.specialOfferSection h4 span{
+  font-weight: 400;
   font-family: 'Oranienbaum', serif;
-  margin: 0;
-  text-align: center;
-  font-size: 5.345vw;
-  margin-top: 3.4vw;
 }
 .favoriteProductP{
   font-family: 'WorkSans-Regular';
   margin: 0;
-  margin-top: -0.5vw;
+  margin-top: -2.5vw;
   text-align: center;
   font-size: 1.7vw;
 }
@@ -316,12 +430,12 @@ main{
   left: -8.35vw;
   width: 16.69vw;
   height: 2.07vw;
-  margin-top: 0;
+  margin-top: 1vw;
 }
 
 .gridContainer{
   position: absolute;
-  bottom: 1.85vw;
+  bottom: 6.171vw;
   height: 51.4vw;
   width: 100%;
   color: rgb(104,102,73);
@@ -464,20 +578,39 @@ main{
   position: relative;
   padding-top: 0.1px;
   width: 100%;
-  height: 13.363vw;
-  background-color: rgb(123,141,178);
+  height: 25vw;
+  background-image:url('../img/specialSectionBG.jpg');
 }
 .advertBox{
   overflow: hidden;
   position: relative;
-  margin-top: 2.227vw;
+  margin-top: 8.5vw;
   margin-left: 50%;
-  left: -26.155vw;
-  width: 52.338vw;
-  height: 7.201vw;
-  border:0.742vw solid rgb(197,197,200);
-  background-color: rgb(102,102,141);
+  left: -32vw;
+  width: 64vw;
+  height: 7.5vw;
+  outline:2.45vw solid rgb(255,154,197,0.4);
+  background-color: rgb(255,255,255,0.85);
 }
+.blackDivOne{
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: -14.5vw;
+  width: 50vw;
+  height: 50vw;
+  transform: rotate(45deg);
+}
+.blackDivTwo{
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: -14.5vw;
+  width: 50vw;
+  height: 50vw;
+  transform: rotate(-45deg);
+}
+
 .gradientYellow{
   position: absolute;
   width: 50vw;
@@ -487,11 +620,12 @@ main{
   left: -21.5vw;
   background: linear-gradient(45deg, rgba(197,164,95,1) 0%, rgba(197,164,95,1) 48%, rgba(221,219,135,1) 100%);
 }
+
 .pinkBag{
   position: absolute;
   left: 1%;
   top: 2.5%;
-  width: 11.428%;
+  width: 8%;
   height: 95%;
   background-image: url('../img/png/pink-bags.png');
 }
@@ -501,6 +635,43 @@ main{
   position: relative;
   font-family: 'WorkSans-Bold';
   color: white;
+}
+.advertBoxButton{
+  position: absolute;
+  display: flex;
+  right: 1.48vw;
+  top: 2vw;
+  border-color: red;
+}
+.advertBoxButton input{
+  width: 18.58vw;
+  height: : 3.19vw;
+  border: none;
+  background-image: url('../img/input.jpg');
+  background-size: 128% 100%;
+}
+.advertBoxButton input::placeholder{
+  padding-left: 1vw;
+}
+.littleArrow{
+  margin-left: 0.5vw;
+  width: 3vw;
+  height: 3vw;
+  background-color: rgb(192,170,173);
+  border-radius: 45%;
+  display: flex;
+  justify-content: center;
+}
+.littleArrow:hover{
+  cursor: pointer;
+}
+.littleArroHtml{
+  font-size: 2vw;
+  font-weight: 800;
+  transform: scale(1,1.2);
+}
+.littleArroHtml:hover{
+  color: rgb(210,200,197);
 }
 .advertButton{
   font-family: 'WorkSans-Regular';
@@ -790,6 +961,7 @@ main{
 .newsAndEventsSection h2{
   margin: 0;
   margin-top: 3.34vw;
+  margin-bottom: 3vw;
   text-align: center;
 }
 
@@ -988,6 +1160,12 @@ main{
   top: -0.37vw;
   right: 2.86vw;
 }
+.needHelpSection .advertBox{
+  background-color: white;
+  outline: 0.9vw solid rgb(213,213,213);
+  z-index: 3;
+  bottom: -2.6vw;
+}
 
 nav{
   margin-top: 1.48vw;
@@ -1023,7 +1201,7 @@ footer{
   padding-top: 0.1px;
   position: relative;
   width: 100%;
-  height: 11.65vw;
+  min-height: 17.1vw;
   background-color: rgb(62,32,76);
 }
 
@@ -1032,7 +1210,7 @@ footer .nailsPng{
   width: 16.367vw;
   height: 5.825vw;
   margin-left: 50%;
-  margin-top: 2vw;
+  margin-top: 7.06vw;
   left:-7.68vw;
 }
 
@@ -1053,7 +1231,14 @@ footer span{
 }
 /* display none for desktop rules */
 .burgerMenuMobile,
-.makeAppointentMobile
+/* .makeAppointentMobile, */
+.mobileOnly,
+.mobileDisplayTriangle,
+.mobileOnlySpecialOffer,
+.mobileOnlyArrowsGrid,
+.carouselDotsMobileOnly,
+.dotsCarOneMobileOnly,
+.dotsCarTwoMobileOnly
 {
   display: none;
 }
@@ -1064,18 +1249,30 @@ footer span{
   .stickyMenuNav,
   .stickyLogin,
   #stickySocialMedia,
-  .appointmentButton,
   .laquer,
   .nailsPng,
   .numberCover,
   .laquerText,
   .triangleBox,
-  .price,
   .bodyCreamTextBox p,
-  .priceOff
+  .priceOff,
+  .greatBuysButton,
+  .blurBox
   {
     display: none;
   }
+
+  .mobileOnlySpecialOffer,
+  .mobileDisplayTriangle,
+  .mobileOnlyArrowsGrid,
+  .carouselDotsMobileOnly,
+  .dotsCarOneMobileOnly,
+  .dotsCarTwoMobileOnly
+  {
+    display: block;
+  }
+
+
   .burgerMenuMobile{
     position: absolute;
     display: block;
@@ -1103,7 +1300,7 @@ footer span{
 
   main{
     background-image: url('../img/mobile-img/mainBG.jpg');
-    height: 181.25vw;
+    height: 100vh;
   }
   .makeAppointentMobile{
     position: absolute;
@@ -1115,57 +1312,272 @@ footer span{
     font-family: 'WorkSans-Bold';
     font-size: 4vw;
     margin-right: 2vw;
+    margin-top: 6vw;
     margin-bottom: 0;
     color: rgb(255,172,162);
   }
   .appointmentsMobilePNG{
-    background-image: url('../img/mobile-img/mobilePng/appointments.png');
     width: 12vw;
     height: 12vw;
   }
+  .lineDownAnim{
+    top:85vh;
+    left: 50vw;
+    /* bottom: 5vw; */
+  }
+  /* BRIDAL SECTION */
+
   /* SPECIAL OFFER SECTION!MOBILE */
   .specialOfferSection{
     position: relative;
-    min-height: 348vw;
+    padding-bottom: 1px;
+    height: auto;
   }
-  .specialOfferSection h2{
-    font-size: 12vw;
+  .specialOfferSection h4{
+    text-align: center;
+    margin-top: 6vw;
+    font-size: 8vw;
+    margin-left: auto;
   }
   .favoriteProductP{
     font-size: 5vw;
   }
   .linePng{
+    position: relative;
     width: 50vw;
-    height: 5vw;
+    height: 6vw;
     left: -25vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
   }
-
+  /* more special offers */
   .gridContainer{
     position: relative;
+    height: auto;
+  }
+  .mobileOnlySpecialOffer{
+    text-align: center;
+    position: relative;
+    margin-top: 25vw;
+  }
+  .mobileDisplayTriangle{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .triangleBox{
+    width: 11vw;
+    height: 11vw;
+    margin-left: 50%;
+    left:-5.5vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+  }
+  .triangleAnim{
+    border-width: 5vw;
+  }
+  @keyframes triangleAnim {
+    0%{
+      opacity: 1;
+      top: 4.544vw;
+      left: 4.544vw;
+    }
+    100%{
+      opacity: 0;
+      top: 0.5vw;
+      left: 0.5vw;
+    }
+  }
+  .mobileOnlyArrowsGrid{
+    height: 12.5vw;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin-top: 40vw;
+  }
+  .mobileOnlyArrowsGrid>div{
+    position: absolute;
     height: 100%;
+    width: 10%;
+    overflow: hidden;
+    background-color: rgb(240,212,199);
+  }
+  .mobileArrow{
+    width: 10vw;
+    height: 10vw;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    border: 4px solid black;
+    transform: rotate(45deg);
+  }
+  .mobileRightArrow{
+    transform: rotate(180deg);
+    right: 0px;
   }
   .gridBox>div{
+    opacity: 1;
     display: none;
+    transition: 1s;
+  }
+  .gridBox div:nth-child(2){
+    display: block;
   }
   .gridBox{
-    display: block;
-    position: absolute;
-    background-image: url('../img/six-image-grid/olay.jpg');
+    position: relative;
     background-size: 100% 110%;
     top:8vw;
-    left: -34.375vw;
-    margin-left: 50%;
-    width: 68.75vw;
-    height:90.625vw;
-    border: 2px solid yellow;
+    left: 0;
+    margin-left: 10%;
+    width: 80%;
+    min-height:100vw;
+    border: 1px solid rgb(232,217,148);
+    margin-bottom: 15vw;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
   }
   .growth{
-    position: absolute;
-    height: 200vw;
+    position: relative;
+    height: 150vw;
     width: 100%;
     left: 0;
-    top: 120vw;
+    top: 8vw;
   }
+  .priceNumbers p{
+    font-size: 5vw;
+  }
+  .gridContainer .fa::before{
+    font-size: 5vw;
+    text-shadow: 2px 2px white;
+  }
+  .redLine{
+    width: 15vw;
+    margin-left: 35%;
+    top: 2vw;
+  }
+  .carouselDotsMobileOnly{
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14vw;
+    margin-top: -3vw;
+  }
+  .carouselDotsMobileOnly div:nth-child(5){
+    background-color: rgb(240,212,199);
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  .dots{
+    transition: 0.35s;
+    margin-right: 3vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    background-color: white;
+  }
+  /* NEW ARRIVAL SECTION */
+  .newArrivals{
+    padding-bottom: 1px;
+    height: auto;
+    margin-top: 15vw;
+    padding-top: 0.1px;
+  }
+  .newArrivals h2{
+    position: relative;
+    font-size: 12vw;
+    top: 12vw;
+    margin-left: 30vw;
+  }
+  .carWraper{
+    position: relative;
+    height: 156.25vw;
+  }
+  .leftImage{
+    bottom: auto;
+    top: -15vw;
+    width: 27vw;
+    height: 38vw;
+  }
+  .leftCarArrowBox{
+    left: 0px;
+    width: 10%;
+    height: 12vw;
+    top: 67vw;
+    background-color: rgb(246,212,209);
+  }
+  .rightCarArrowBox{
+    right: 0px;
+    width: 10%;
+    height: 12vw;
+    top: 67vw;
+    background-color: rgb(246,212,209);
+  }
+  .arrow{
+    top: 0.8vw;
+    left: 3.8vw;
+    border-color: black;
+    border-width: 3px;
+  }
+  .carContainer{
+    width: 80%;
+    right: 10%;
+  }
+  #carouselOne{
+    width: 99%;
+    display: block;
+  }
+  #carouselOne>div{
+    transition: 0.2s;
+    opacity: 1;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(249,242,219);
+  }
+  #carouselOne div:nth-child(1){
+    display: block;
+  }
+
+  #carouselTwo{
+    width: 99%;
+    display: block;
+  }
+  #carouselTwo>div{
+    transition: 0.2s;
+    opacity: 1;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid yellow;
+  }
+  #carouselTwo div:nth-child(1){
+    display: block;
+  }
+  .carPicContainer p{
+    font-size: 5vw;
+  }
+  .dotsCarOneMobileOnly,.dotsCarTwoMobileOnly{
+    position: absolute;
+    display: flex;
+    bottom: 13.5vw;
+    width: 100%;
+    height: 5vw;
+    justify-content: center;
+  }
+  .dotsCarOneMobileOnly div,.dotsCarTwoMobileOnly div{
+    transition: 0.5s;
+    border-radius: 50%;
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-right: 3vw;
+    background-color: white;
+  }
+  .dotsCarOneMobileOnly div:nth-child(1),.dotsCarTwoMobileOnly div:nth-child(1){
+    width: 4.5vw;
+    height: 4.5vw;
+    background-color: rgb(255,219,213);
+  }
+
+
   /* INSTAGRAM SECTION  */
   .gridBoxSpecial{
     height: 172vw;
@@ -1199,6 +1611,28 @@ footer span{
     grid-column: 2/3;
     margin-right: 5%;
   }
+  /* 3 car section/news and events*/
+  .carThreeContainer{
+    height: auto;
+  }
+  .newsAndEventsSection h2{
+    margin-bottom: 3vw;
+  }
+  .carouselThree>div{
+    width: 100%;
+  }
+  .carouselThree{
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+  }
+  .carDivOne, .carDivTwo, .carDivThree{
+    height: 70vw;
+  }
+  #hideMobile{
+    display: none;
+  }
+
   /* BODY CREAM SECTION */
   .bodyCream{
     height: 231.87vw;
@@ -1225,11 +1659,11 @@ footer span{
     width: 100%;
     height: 170vw;
   }
-  .regularPriceTextBox p{
-    font-size: 4.375vw;
-  }
   .regularPriceTextBox a{
     margin-top: 5vw;
+    font-size: 4.375vw;
+  }
+  .regularPriceTextBox p{
     font-size: 4.375vw;
   }
 }
