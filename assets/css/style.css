@@ -368,6 +368,17 @@ main{
   padding-left: 12.62vw;
   padding-right: 12.62vw;
 }
+.whatWeDo>div>div{
+  width: 100%;
+  height: 100%;
+  position:relative;
+  top:90%;
+  transition: 1s;
+  background: linear-gradient(to top, rgba(248,80,50,1) 0%, rgba(255,255,255,0) 100%);
+}
+.whatWeDo>div{
+  overflow: hidden;
+}
 
 .whatWeDoOne{
   position: relative;
@@ -397,7 +408,7 @@ main{
   width: 100%;
   text-align: center;
   font-size: 1.95vw;
-  background-color: rgb(229,225,100,0.33)
+  background-color: rgb(229,225,100,0.8)
 }
 .whatWeDoTextBox p{
   margin: 0;

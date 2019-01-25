@@ -84,6 +84,19 @@ setInterval(function(){
     console.log(bridalImageModulo%4 + " i am 3");
   }
 },3500);
+
+// wht we sell 3pic hover anim
+// wht we sell 3pic hover anim
+// wht we sell 3pic hover anim
+var whatWeDoOne = document.getElementsByClassName('whatWeDoOne')[0];
+var whatWeDoTextBox = document.getElementsByClassName('whatWeDoTextBox');
+
+whatWeDoOne.addEventListener('mouseenter',function(){
+  whatWeDoTextBox[0].style.top = '0%';
+})
+whatWeDoOne.addEventListener('mouseleave',function(){
+  whatWeDoTextBox[0].style.top = '90%';
+})
 //carousel one
 //carousel one
 //carousel one
