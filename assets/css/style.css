@@ -289,11 +289,37 @@ main{
 .bridalSection h4 span{
   font-family: 'Oranienbaum', serif;
 }
+.bridalImageOrangeBox{
+  width: 100%;
+  position: relative;
+  height: 37.17vw;
+  background: blue;
+  background: linear-gradient(to bottom, rgba(228,132,120,1) 0%, rgba(255,187,176,1) 100%);
+}
+.narrowDivBox{
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.narrowDiv{
+  position: absolute;
+  top: -15vw;
+  left: 39vw;
+  width: 22.3vw;
+  height: 70vw;
+  background-color: rgb(221,122,110);
+  transform: rotate(-38deg);
+}
 .bridalImage{
+  top: 5.2vw;
+  left: 13%;
   position: relative;
   padding-top: 0.1px;
-  width: 100%;
-  height: 47.58vw;
+  width: 74%;
+  height: 38.66vw;
 }
 .bridal{
   position: absolute;
@@ -319,12 +345,12 @@ main{
 
 .bridalOverLay{
   position: absolute;
-  background-color: rgb(209,254,221,0.32);
+  background-color: rgb(209,254,221,0.30);
   border: 1px solid rgb(214,243,217);
-  width: 52vw;
-  height: 34.94vw;
-  margin-left: 23.8vw;
-  margin-top: 8.92vw;
+  width: 56vw;
+  height: 28.62vw;
+  margin-left: 7.8vw;
+  margin-top: 7.063vw;
 }
 .bridalHugeFont{
   transition: 0.5s;
@@ -337,28 +363,14 @@ main{
 }
 .allGenderText{
   position: absolute;
-  left: 0;
-  bottom: 6vw;
-  background-color: rgb(255,255,255,0.2);
-  height: 4.46vw;
-  display: flex;
-  align-content: center;
-}
-.allGenderText p{
-  margin-left: 1.48vw;
-  margin-right: 11.9vw;
-  font-size: 1.5vw;
-  color: black;
-}
-.moreInfoButton{
-  position: absolute;
+  right:4.31vw;
+  bottom: 2.23vw;
+  background-color: rgb(228,132,120,0.5);
+  width: 18.587vw;
+  height: 3.71vw;
+  font-size: 1.35vw;
+  font-family: 'WorkSans-Regular';
   border: none;
-  background-color: rgb(209,254,221,0.7);
-  width: 15.61vw;
-  height: 4.23vw;
-  font-size: 1.48vw;
-  bottom: 5.2vw;
-  right: 5.94vw;
 }
 
 /* whatWeDo whatWeDo whatWeDo whatWeDo */
@@ -374,7 +386,7 @@ main{
   position:relative;
   top:90%;
   transition: 1s;
-  background: linear-gradient(to top, rgba(248,80,50,1) 0%, rgba(255,255,255,0) 100%);
+  background: rgb(248,80,50,0.8);
 }
 .whatWeDo>div{
   overflow: hidden;
@@ -406,7 +418,7 @@ main{
   bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color: rgb(229,225,100,0.8);
+  background-color: rgb(248,80,50,0.8);
 }
 .whatWeDoTextBox p{
   color:black;

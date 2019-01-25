@@ -88,25 +88,57 @@ setInterval(function(){
 // wht we sell 3pic hover anim
 // wht we sell 3pic hover anim
 // wht we sell 3pic hover anim
-var whatWeDoOne = document.getElementsByClassName('whatWeDoOne')[0];
+var whatWeDoOne = document.getElementsByClassName('whatWeDoJS');
 var whatWeDoTextBox = document.getElementsByClassName('whatWeDoTextBox');
 var fontFam = document.getElementsByClassName('fontFam');
 
 
-whatWeDoOne.addEventListener('mouseenter',function(){
+whatWeDoOne[0].addEventListener('mouseenter',function(){
   whatWeDoTextBox[0].style.top = '0%';
   whatWeDoTextBox[0].style.background = "linear-gradient(to top, rgb(248,80,50,1) 0%, rgba(255,255,255,0) 100%)";
   whatWeDoTextBox[0].style.paddingTop = '7vw';
   fontFam[0].style.fontFamily = 'WorkSans-Bold';
 })
-whatWeDoOne.addEventListener('mouseleave',function(){
+
+whatWeDoOne[0].addEventListener('mouseleave',function(){
   whatWeDoTextBox[0].style.top = '90%';
   whatWeDoTextBox[0].style.paddingTop = '0vw';
   fontFam[0].style.fontFamily = 'WorkSans-Regular';
   setTimeout(function(){
     whatWeDoTextBox[0].style.background = "rgb(248,80,50,0.8)";
   },700);
+})
+//whatwedo 1
+whatWeDoOne[1].addEventListener('mouseenter',function(){
+  whatWeDoTextBox[1].style.top = '0%';
+  whatWeDoTextBox[1].style.background = "linear-gradient(to top, rgb(248,80,50,1) 0%, rgba(255,255,255,0) 100%)";
+  whatWeDoTextBox[1].style.paddingTop = '7vw';
+  fontFam[1].style.fontFamily = 'WorkSans-Bold';
+})
 
+whatWeDoOne[1].addEventListener('mouseleave',function(){
+  whatWeDoTextBox[1].style.top = '90%';
+  whatWeDoTextBox[1].style.paddingTop = '0vw';
+  fontFam[1].style.fontFamily = 'WorkSans-Regular';
+  setTimeout(function(){
+    whatWeDoTextBox[1].style.background = "rgb(248,80,50,0.8)";
+  },700);
+})
+//whatwedo 2
+whatWeDoOne[2].addEventListener('mouseenter',function(){
+  whatWeDoTextBox[2].style.top = '0%';
+  whatWeDoTextBox[2].style.background = "linear-gradient(to top, rgb(248,80,50,1) 0%, rgba(255,255,255,0) 100%)";
+  whatWeDoTextBox[2].style.paddingTop = '7vw';
+  fontFam[2].style.fontFamily = 'WorkSans-Bold';
+})
+
+whatWeDoOne[2].addEventListener('mouseleave',function(){
+  whatWeDoTextBox[2].style.top = '90%';
+  whatWeDoTextBox[2].style.paddingTop = '0vw';
+  fontFam[2].style.fontFamily = 'WorkSans-Regular';
+  setTimeout(function(){
+    whatWeDoTextBox[2].style.background = "rgb(248,80,50,0.8)";
+  },700);
 })
 //carousel one
 //carousel one
