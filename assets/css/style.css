@@ -408,7 +408,7 @@ main{
   width: 100%;
   text-align: center;
   font-size: 1.95vw;
-  background-color: rgb(229,225,100,0.8)
+  background-color: rgb(229,225,100,0.8);
 }
 .whatWeDoTextBox p{
   margin: 0;

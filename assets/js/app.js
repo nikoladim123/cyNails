@@ -90,12 +90,23 @@ setInterval(function(){
 // wht we sell 3pic hover anim
 var whatWeDoOne = document.getElementsByClassName('whatWeDoOne')[0];
 var whatWeDoTextBox = document.getElementsByClassName('whatWeDoTextBox');
+var fontFam = document.getElementsByClassName('fontFam');
+
 
 whatWeDoOne.addEventListener('mouseenter',function(){
   whatWeDoTextBox[0].style.top = '0%';
+  whatWeDoTextBox[0].style.background = "linear-gradient(to top, rgb(248,80,50,1) 0%, rgba(255,255,255,0) 100%)";
+  whatWeDoTextBox[0].style.paddingTop = '7vw';
+  fontFam[0].style.fontFamily = 'WorkSans-Bold';
 })
 whatWeDoOne.addEventListener('mouseleave',function(){
   whatWeDoTextBox[0].style.top = '90%';
+  whatWeDoTextBox[0].style.paddingTop = '0vw';
+  fontFam[0].style.fontFamily = 'WorkSans-Regular';
+  setTimeout(function(){
+    whatWeDoTextBox[0].style.background = "rgb(248,80,50,0.8)";
+  },700);
+
 })
 //carousel one
 //carousel one
