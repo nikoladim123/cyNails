@@ -700,9 +700,11 @@ main{
   cursor: pointer;
 }
 .littleArroHtml{
+  position: relative;
+  left:0.2vw;
   font-size: 2vw;
   font-weight: 800;
-  transform: scale(1,1.2);
+  /* transform: scale(1,1.2); */
 }
 .littleArroHtml:hover{
   color: rgb(210,200,197);
@@ -1553,11 +1555,14 @@ footer span{
     border-radius: 50%;
     background-color: white;
   }
-  /* NEW ARRIVAL SECTION */
+  /* threeCarBigBox  mobile*/
+  .threeCarBigBox {
+    margin-bottom: 25vw;
+  }
+  /* NEW ARRIVAL SECTION mobile*/
   .newArrivals{
     padding-bottom: 1px;
     height: auto;
-    margin-top: 15vw;
     padding-top: 0.1px;
   }
   .newArrivals h2{
