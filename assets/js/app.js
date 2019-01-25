@@ -407,3 +407,56 @@ mobileRightArrow.addEventListener('click',function(){
   dots[mobileCarModulo%5].style.height = '4.5vw';
   console.log(mobileCarModulo%7);
 })
+
+// bigBox logic
+// bigBox logic
+// bigBox logic
+var newArrivals = document.getElementsByClassName('newArrivals')[0];
+var bestSellers = document.getElementsByClassName('bestSellers')[0];
+var trendingLooksSection = document.getElementsByClassName('trendingLooksSection')[0];
+
+var selectOne = document.getElementsByClassName('selectOne')[0];
+var selectTwo = document.getElementsByClassName('selectTwo')[0];
+var selectThree = document.getElementsByClassName('selectThree')[0];
+
+selectOne.addEventListener('click',function(){
+  selectOne.style.fontWeight = '900';
+  selectTwo.style.fontWeight = '400';
+  selectThree.style.fontWeight = '400';
+
+  newArrivals.style.opacity = '1';
+  bestSellers.style.opacity = '0';
+  trendingLooksSection.style.opacity = '0';
+
+  newArrivals.style.zIndex = '3';
+  bestSellers.style.zIndex = '0';
+  trendingLooksSection.style.zIndex = '0';
+});
+
+selectTwo.addEventListener('click',function(){
+  selectOne.style.fontWeight = '400';
+  selectTwo.style.fontWeight = '900';
+  selectThree.style.fontWeight = '400';
+
+  newArrivals.style.opacity = '0';
+  bestSellers.style.opacity = '1';
+  trendingLooksSection.style.opacity = '0';
+
+  newArrivals.style.zIndex = '0';
+  bestSellers.style.zIndex = '3';
+  trendingLooksSection.style.zIndex = '0';
+});
+
+selectThree.addEventListener('click',function(){
+  selectOne.style.fontWeight = '400';
+  selectTwo.style.fontWeight = '400';
+  selectThree.style.fontWeight = '900';
+
+  newArrivals.style.opacity = '0';
+  bestSellers.style.opacity = '0';
+  trendingLooksSection.style.opacity = '1';
+
+  newArrivals.style.zIndex = '0';
+  bestSellers.style.zIndex = '0';
+  trendingLooksSection.style.zIndex = '3';
+});

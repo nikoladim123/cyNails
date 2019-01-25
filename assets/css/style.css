@@ -26,7 +26,7 @@ body{
 }
 div,main,section{
   background-size: 100% 100%;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 a{
   text-decoration: none;
@@ -391,8 +391,8 @@ main{
   position: relative;
   background-image: url('../img/whatWeDoTwo.jpg');
   margin-right: 2.6vw;
+  width: 21.75vw;
   height: 33.4vw;
-  width: 24.87vw;
 }
 .whatWeDoThree{
   position: relative;
@@ -402,15 +402,18 @@ main{
   height: 33.4vw;
 }
 .whatWeDoTextBox{
-  font-family: 'WorkSans-Regular';
   position: absolute;
   bottom: 0px;
   width: 100%;
   text-align: center;
-  font-size: 1.95vw;
   background-color: rgb(229,225,100,0.8);
 }
 .whatWeDoTextBox p{
+  color:black;
+}
+.fontFam{
+  font-size: 1.95vw;
+  font-family: 'WorkSans-Regular';
   margin: 0;
 }
 /* SPECIAL OFFERS , SPECIAL OFFERS */
@@ -591,6 +594,7 @@ main{
   background-color: rgb(50,59,98);
   transform: rotate(-35deg);
 }
+
 /* SPECIAL SALES SECTION */
 .specialSales{
   position: relative;
@@ -703,8 +707,35 @@ main{
   font-size: 1.63vw;
   background-color: rgba(221,219,135,1);
 }
+
+/*  threeCarBigBox big box*/
+.threeCarBigBox{
+  position: relative;
+}
+.carSelectBox{
+  z-index: 6;
+  position: absolute;
+  display: flex;
+  top: 7vw;
+  left: 25vw;
+}
+.carSelectBox p:hover{
+  cursor: pointer;
+}
+.selectOne{
+font-weight: 900;
+}
+.selectTwo{
+
+}
+.selectThree{
+
+}
 /* NEW ARIVALS */
 .newArrivals{
+  transition: 1s;
+  opacity: 1;
+  z-index: 3;
   padding-top: 0.1px;
   position: relative;
   width: 100%;
@@ -828,6 +859,13 @@ main{
 }
 
 /* BEST SELLERS SECTION ,carTwo*/
+.newArrivals.bestSellers{
+  transition: 1s;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+}
 .bestSellers .carWraper{
   background-color: rgb(249,216,193);
 }
@@ -853,6 +891,11 @@ main{
 
 /* trending section */
 .trendingLooksSection{
+  transition: 1s;
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  top: 5.8vw;
   width: 100%;
   height: 36.74vw;
 }
