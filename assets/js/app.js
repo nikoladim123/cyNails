@@ -5,20 +5,24 @@ window.onscroll = function(){
 
 //sticky menu
 var stickyMenu = document.getElementsByClassName('stickyMenu')[0];
-var stickySocialMedia = document.getElementById('stickySocialMedia');
+var stickyBackgroundLayer = document.getElementsByClassName('stickyBackgroundLayer')[0];
+
 var stickySwitch = 0;
 function stickyMenuFunc(){
-  if(this.oldScroll > this.scrollY && window.scrollY > 1 && stickySwitch===0){
+  if(this.oldScroll > this.scrollY  && stickySwitch===0){
     if(window.innerWidth > window.innerHeight){
-        stickyMenu.style.height = '3.427vw';
-        stickySocialMedia.style.top = '0.893vw'
+        stickyMenu.style.height = '8.88vw';
+        stickyBackgroundLayer.style.height = '8.88vw';
     }else{
       stickyMenu.style.height = '17vw';
+      stickyBackgroundLayer.style.height = '17vw';
     }
   }
   else {
-    stickyMenu.style.height = '0vw';
-    stickySocialMedia.style.top = '-10vw'
+    if(window.scrollY > window.innerWidth / 100 * 8.88){
+      stickyMenu.style.height = '0vw';
+      stickyBackgroundLayer.style.height = '0vw';
+    }
   }
   this.oldScroll = this.scrollY;
 }
