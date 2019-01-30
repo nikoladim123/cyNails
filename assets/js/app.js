@@ -11,8 +11,8 @@ var stickySwitch = 0;
 function stickyMenuFunc(){
   if(this.oldScroll > this.scrollY  && stickySwitch===0){
     if(window.innerWidth > window.innerHeight){
-        stickyMenu.style.height = '8.88vw';
-        stickyBackgroundLayer.style.height = '8.88vw';
+        stickyMenu.style.height = '9.63vw';
+        stickyBackgroundLayer.style.height = '9.63vw';
     }else{
       stickyMenu.style.height = '17vw';
       stickyBackgroundLayer.style.height = '17vw';
@@ -27,67 +27,86 @@ function stickyMenuFunc(){
   this.oldScroll = this.scrollY;
 }
 
+// megaMenuHoverBox
+// megaMenuHoverBox
+// megaMenuHoverBox
+var megaMenuHoverBox = document.getElementsByClassName('megaMenuHoverBox')[0];
+var megaMenu = document.getElementsByClassName('megaMenu')[0];
+megaMenuHoverBox.addEventListener('mouseenter',function(){
+  megaMenu.style.height = '30.76vw';
+  megaMenu.style.bottom = '-30.7vw';
+  stickyMenu.style.height = '40.55vw';
+  stickyMenu.style.borderBottom = 'none'
+});
+megaMenuHoverBox.addEventListener('mouseleave',function(){
+  stickyMenu.style.height = '9.63vw';
+  megaMenu.style.height = '30.76vw';
+  megaMenu.style.bottom = '-30.76';
+  stickyMenu.style.borderBottom = '1px solid white'
+});
+
 // car bridal
 // car bridal
 // car bridal
-var bridalImage = document.getElementsByClassName('bridal');
-var bridalImageModulo = 0;
-var bridalHugeFont = document.getElementsByClassName('bridalHugeFont')[0];
-setInterval(function(){
-  bridalImageModulo++;
-  if(bridalImageModulo%4 === 3){
-    bridalHugeFont.style.opacity = 0;
-    setTimeout(function(){
-      bridalHugeFont.innerHTML = 'SKINCARE';
-      bridalHugeFont.style.opacity = 1;
-    },500)
 
-    bridalImage[0].style.opacity = '1'
-    bridalImage[1].style.opacity ='0';
-    bridalImage[2].style.opacity ='0';
-    bridalImage[3].style.opacity ='0';
-    console.log(bridalImageModulo%4 + " i am 0");
-  }
-  if(bridalImageModulo%4 === 1){
-    bridalHugeFont.style.opacity = 0;
-    setTimeout(function(){
-      bridalHugeFont.innerHTML = 'MANICURE';
-      bridalHugeFont.style.opacity = 1;
-    },500)
-
-    bridalImage[1].style.opacity ='1';
-    bridalImage[0].style.opacity ='0';
-    bridalImage[2].style.opacity ='0';
-    bridalImage[3].style.opacity ='0';
-    console.log(bridalImageModulo%4 + " i am 1");
-  }
-  if(bridalImageModulo%4 === 2){
-    bridalHugeFont.style.opacity = 0;
-    setTimeout(function(){
-      bridalHugeFont.innerHTML = 'PEDICURE';
-      bridalHugeFont.style.opacity = 1;
-    },500)
-
-    bridalImage[2].style.opacity ='1';
-    bridalImage[0].style.opacity ='0';
-    bridalImage[1].style.opacity ='0';
-    bridalImage[3].style.opacity ='0';
-    console.log(bridalImageModulo%4 + " i am 2");
-  }
-  if(bridalImageModulo%4 === 0){
-    bridalHugeFont.style.opacity = 0;
-    setTimeout(function(){
-      bridalHugeFont.innerHTML = 'BRIDAL';
-      bridalHugeFont.style.opacity = 1;
-    },500)
-
-    bridalImage[3].style.opacity ='1';
-    bridalImage[0].style.opacity ='0';
-    bridalImage[1].style.opacity ='0';
-    bridalImage[2].style.opacity ='0';
-    console.log(bridalImageModulo%4 + " i am 3");
-  }
-},3500);
+// var bridalImage = document.getElementsByClassName('bridal');
+// var bridalImageModulo = 0;
+// var bridalHugeFont = document.getElementsByClassName('bridalHugeFont')[0];
+// setInterval(function(){
+//   bridalImageModulo++;
+//   if(bridalImageModulo%4 === 3){
+//     bridalHugeFont.style.opacity = 0;
+//     setTimeout(function(){
+//       bridalHugeFont.innerHTML = 'SKINCARE';
+//       bridalHugeFont.style.opacity = 1;
+//     },500)
+//
+//     bridalImage[0].style.opacity = '1'
+//     bridalImage[1].style.opacity ='0';
+//     bridalImage[2].style.opacity ='0';
+//     bridalImage[3].style.opacity ='0';
+//     console.log(bridalImageModulo%4 + " i am 0");
+//   }
+//   if(bridalImageModulo%4 === 1){
+//     bridalHugeFont.style.opacity = 0;
+//     setTimeout(function(){
+//       bridalHugeFont.innerHTML = 'MANICURE';
+//       bridalHugeFont.style.opacity = 1;
+//     },500)
+//
+//     bridalImage[1].style.opacity ='1';
+//     bridalImage[0].style.opacity ='0';
+//     bridalImage[2].style.opacity ='0';
+//     bridalImage[3].style.opacity ='0';
+//     console.log(bridalImageModulo%4 + " i am 1");
+//   }
+//   if(bridalImageModulo%4 === 2){
+//     bridalHugeFont.style.opacity = 0;
+//     setTimeout(function(){
+//       bridalHugeFont.innerHTML = 'PEDICURE';
+//       bridalHugeFont.style.opacity = 1;
+//     },500)
+//
+//     bridalImage[2].style.opacity ='1';
+//     bridalImage[0].style.opacity ='0';
+//     bridalImage[1].style.opacity ='0';
+//     bridalImage[3].style.opacity ='0';
+//     console.log(bridalImageModulo%4 + " i am 2");
+//   }
+//   if(bridalImageModulo%4 === 0){
+//     bridalHugeFont.style.opacity = 0;
+//     setTimeout(function(){
+//       bridalHugeFont.innerHTML = 'BRIDAL';
+//       bridalHugeFont.style.opacity = 1;
+//     },500)
+//
+//     bridalImage[3].style.opacity ='1';
+//     bridalImage[0].style.opacity ='0';
+//     bridalImage[1].style.opacity ='0';
+//     bridalImage[2].style.opacity ='0';
+//     console.log(bridalImageModulo%4 + " i am 3");
+//   }
+// },3500);
 
 // wht we sell 3pic hover anim
 // wht we sell 3pic hover anim
@@ -142,6 +161,38 @@ whatWeDoOne[2].addEventListener('mouseleave',function(){
   fontFam[2].style.fontFamily = 'WorkSans-Regular';
   setTimeout(function(){
     whatWeDoTextBox[2].style.background = "rgb(248,80,50,0.8)";
+  },700);
+})
+//whatwedo 3
+whatWeDoOne[3].addEventListener('mouseenter',function(){
+  whatWeDoTextBox[3].style.top = '0%';
+  whatWeDoTextBox[3].style.background = "linear-gradient(to top, rgb(248,80,50,1) 0%, rgba(255,255,255,0) 100%)";
+  whatWeDoTextBox[3].style.paddingTop = '7vw';
+  fontFam[3].style.fontFamily = 'WorkSans-Bold';
+})
+
+whatWeDoOne[3].addEventListener('mouseleave',function(){
+  whatWeDoTextBox[3].style.top = '90%';
+  whatWeDoTextBox[3].style.paddingTop = '0vw';
+  fontFam[3].style.fontFamily = 'WorkSans-Regular';
+  setTimeout(function(){
+    whatWeDoTextBox[3].style.background = "rgb(248,80,50,0.8)";
+  },700);
+})
+//whatwedo 4
+whatWeDoOne[4].addEventListener('mouseenter',function(){
+  whatWeDoTextBox[4].style.top = '0%';
+  whatWeDoTextBox[4].style.background = "linear-gradient(to top, rgb(248,80,50,1) 0%, rgba(255,255,255,0) 100%)";
+  whatWeDoTextBox[4].style.paddingTop = '7vw';
+  fontFam[4].style.fontFamily = 'WorkSans-Bold';
+})
+
+whatWeDoOne[4].addEventListener('mouseleave',function(){
+  whatWeDoTextBox[4].style.top = '90%';
+  whatWeDoTextBox[4].style.paddingTop = '0vw';
+  fontFam[4].style.fontFamily = 'WorkSans-Regular';
+  setTimeout(function(){
+    whatWeDoTextBox[4].style.background = "rgb(248,80,50,0.8)";
   },700);
 })
 //carousel one

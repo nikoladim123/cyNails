@@ -69,7 +69,7 @@ button:hover{
   left: 0px;
   transition: 0.4s;
   width: 100%;
-  height: 8.88vw;
+  height: 9.63vw;
   overflow: hidden;
   z-index: 10
 }
@@ -78,7 +78,7 @@ button:hover{
   top: 0;
   left: 0;
   width: 100%;
-  height: 8.88vw;
+  height: 9.63vw;
   background-image: url('../img/stickyBG.jpg');
 }
 .stickyMenu{
@@ -89,32 +89,128 @@ button:hover{
   top: -1px;
   left: 0px;
   width: 100%;
-  height: 8.88vw;
+  height: 9.63vw;
+  /* height: 40.55vw; */
   z-index: 20;
   border-bottom: 1px solid white;
 }
+.megaMenu{
+  overflow: hidden;
+  transition: 0.4s;
+  position: absolute;
+  bottom: -30.7vw;
+  left: 0;
+  width: 100vw;
+  height: 30.7vw;
+  background: rgb(246,226,219);
+}
+.mmImageFlexBox{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 4.9vw;
+  padding-right: 4.9vw;
+}
+.mmpic{
+  width: 21.94vw;
+  height: 21.94vw;
+  margin-top: -2vw;
+  margin-left: -5.4vw;
+  margin-right: -5.4vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: -1vw 0;
+}
+.mmPicBox{
+  /* overflow: hidden; */
+}
+.mmPicBox p{
+  margin: 0;
+  margin-left:-1vw;
+  margin-top: -3.2vw;
+  font-size: 3.61vw;
+  font-family: 'Oranienbaum', serif;
+  color: rgb(86,45,96);
+  text-align: center;
+}
+.mmPicOne{background-image: url('../img/megaMenu/nail-laquer.png');}
+.mmPicTwo{background-image: url('../img/megaMenu/lips.png');}
+.mmPicThree{background-image: url('../img/megaMenu/eyes.png');}
+.mmPicFour{background-image: url('../img/megaMenu/face.png');}
+.mmPicFive{background-image: url('../img/megaMenu/liquid-powder.png');}
+
+.mmFreeShiping{
+  color: rgb(255,80,131);
+  font-weight: 600;
+  margin: 0;
+  margin-top: 3.2vw;
+  font-size: 1.575vw;
+  text-align: center;
+}
+.mmFreeShiping span{
+  font-family: 'WorkSans-SemiBold';
+}
+
+.mmTodaysSpecial{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4.151vw;
+  border-top:1px solid rgb(231,195,205);
+}
+.mmTodaysSpecial p{
+  margin: 0;
+  margin-top: 1.06vw;
+  color: rgb(94,60,101,0.44);
+  font-weight: 900;
+  font-size: 1.779vw;
+  text-align: center;
+}
+
+.mmPurpleStripe{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 0.296vw;
+  background-color: rgb(206,68,160);
+  border-top: 1px solid rgb(220,124,181);
+  border-bottom: 1px solid rgb(220,124,181);
+}
 .stickyMenuInside{
-  /* background-image: url('../img/stickyBG.jpg'); */
   background-color: rgb(52,11,76,0.9);
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 8.88vw;
+  height: 19.63vw;
   z-index: 21;
+}
+.stickyYellowStripe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.444vw;
+  background-color: rgb(221,197,131);
+  border-top: 0.1482vw solid rgb(200,174,122);
+  border-bottom: 0.1482vw solid rgb(200,174,122);
 }
 .BEYOUTY{
   position: absolute;
   margin-left: 50%;
-  top: 0.74vw;
+  top: 1.6vw;
   left: -6vw;
   width: 11.85vw;
   height: 4.4vw;
   background-image: url('../img/png/Pro.png');
 }
+.BEYOUTY:hover{
+  cursor: pointer;
+}
 .carBox{
   position: absolute;
-  top: 0.25vw;
+  top: 0.9904vw;
   right: 6.88vw;
 }
 .carBox p{
@@ -130,8 +226,9 @@ button:hover{
   height: 2.14vw;
 }
 .stickyTodaysSpecial{
+  z-index: 1;
   position: absolute;
-  bottom: 0;
+  top: 5.84vw;
   font-family: 'WorkSans-Bold';
   margin-left: 4.8vw;
 }
@@ -140,18 +237,22 @@ button:hover{
   color: white;
   font-size:1.33vw;
 }
+.stickyTodaysSpecial p:hover{
+  color: rgb(255,213,53);
+  cursor: pointer;
+}
 .stickyMenuNav{
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  height: 2.15vw;
-  width: 19.25vw;
-  margin-left: 50%;
-  left: -9.7vw;
-  bottom:0;
+  justify-content: center;
+  position: relative;
+  height: 2.25vw;
+  width: 100%;
+  top: 7.5vw;
 }
 .stickyMenuNav a{
   transition: 0.35s;
+  padding-left: 1.3vw;
+  padding-right: 1.3vw;
   color:white;
   font-family: 'WorkSans-Regular';
   font-size: 1.18vw;
@@ -182,7 +283,7 @@ button:hover{
 
 .stickyLogin{
   position: absolute;
-  bottom: 0px;
+  top: 6vw;
   right: 4.8vw;
   font-family: 'WorkSans-Bold';
   display: flex;
@@ -191,9 +292,14 @@ button:hover{
   height: 3.5vw;
 }
 .stickyLogin p{
+  transition: 0.3s;
   font-weight: 900;
   color: white;
   font-size: 1.33vw;
+}
+.stickyLogin p:hover{
+  color: rgb(255,213,53);
+  cursor: pointer;
 }
 .loginPng{
   margin-left: 1vw;
@@ -324,16 +430,33 @@ main{
 }
 /* triangle anim end*/
 /* whatWeSellBnd bnd */
+.whatWeSellBnd p:nth-child(1){
+  margin: 0;
+  margin-top: 13vw;
+  margin-left: 9vw;
+  font-size: 1.85vw;
+  color:rgb(102,102,102);
+  font-family: 'WorkSans-Regular';
+}
+.whatWeSellBnd p:nth-child(2){
+  margin: 0;
+  margin-left: 9.25vw;
+  font-size: 1.65vw;
+  color:rgb(102,102,102);
+  font-weight: 800;
+  font-family: 'WorkSans-Regular';
+}
 .whatWeSellBnd h4{
   font-weight: 100;
-  margin-top: 11vw;
+  margin-top: 1.4vw;
   margin-left: 15vw;
+  margin-bottom: -2.6vw;
 }
 .whatWeSellBnd h4 span{
   font-family: 'Oranienbaum', serif;
 }
 /* BRIDAL SECTION */
-.bridalSection{
+/* .bridalSection{
   position: relative;
 }
 .bridalSection h4{
@@ -383,7 +506,6 @@ main{
   top: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url('../img/bridal/bridal.jpg'); */
 }
 .bridalOne,
 .bridalTwo,
@@ -427,14 +549,15 @@ main{
   font-size: 1.35vw;
   font-family: 'WorkSans-Regular';
   border: none;
-}
+} */
 
-/* whatWeDo whatWeDo whatWeDo whatWeDo */
+/* whatWeDo */
 .whatWeDo{
   height: 45.9vw;
   display: flex;
-  padding-left: 12.62vw;
-  padding-right: 12.62vw;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 11vw;
 }
 .whatWeDo>div>div{
   width: 100%;
@@ -447,28 +570,28 @@ main{
 .whatWeDo>div{
   overflow: hidden;
 }
+.whatWeDoJS{
+  position: relative;
+  width: 14.82vw;
+  height: 27vw;
+}
 
 .whatWeDoOne{
-  position: relative;
-  background-image: url('../img/whatWeDoOne.jpg');
-  margin-right: 2.6vw;
-  width: 21.75vw;
-  height: 33.4vw;
+  background-image: url('../img/whatWeDo/nail-laquer.jpg');
 }
 .whatWeDoTwo{
-  position: relative;
-  background-image: url('../img/whatWeDoTwo.jpg');
-  margin-right: 2.6vw;
-  width: 21.75vw;
-  height: 33.4vw;
+  background-image: url('../img/whatWeDo/lips.jpg');
 }
 .whatWeDoThree{
-  position: relative;
-  background-image: url('../img/whatWeDoThree.jpg');
-  margin-right: 2.6vw;
-  width: 21.75vw;
-  height: 33.4vw;
+  background-image: url('../img/whatWeDo/eyes.jpg');
 }
+.whatWeDoFour{
+  background-image: url('../img/whatWeDo/skin-care.jpg');
+}
+.whatWeDoFive{
+  background-image: url('../img/whatWeDo/liquid-powder.jpg');
+}
+
 .whatWeDoTextBox{
   position: absolute;
   bottom: 0px;
