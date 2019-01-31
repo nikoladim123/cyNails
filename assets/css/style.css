@@ -62,6 +62,7 @@ button{
 button:hover{
   cursor: pointer;
 }
+
 /* sticky menu */
 .stickyBackgroundLayer{
   position: fixed;
@@ -69,7 +70,7 @@ button:hover{
   left: 0px;
   transition: 0.4s;
   width: 100%;
-  height: 9.63vw;
+  height: 10.05vw;
   overflow: hidden;
   z-index: 10
 }
@@ -78,7 +79,7 @@ button:hover{
   top: 0;
   left: 0;
   width: 100%;
-  height: 9.63vw;
+  height: 10.05vw;
   background-image: url('../img/stickyBG.jpg');
 }
 .stickyMenu{
@@ -89,7 +90,7 @@ button:hover{
   top: -1px;
   left: 0px;
   width: 100%;
-  height: 9.63vw;
+  height: 10.05vw;
   /* height: 40.55vw; */
   z-index: 20;
   border-bottom: 1px solid white;
@@ -183,7 +184,7 @@ button:hover{
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 19.63vw;
+  height: 20.05vw;
   z-index: 21;
 }
 .stickyYellowStripe{
@@ -191,11 +192,24 @@ button:hover{
   top: 0;
   left: 0;
   width: 100%;
-  height: 0.444vw;
-  background-color: rgb(221,197,131);
-  border-top: 0.1482vw solid rgb(200,174,122);
-  border-bottom: 0.1482vw solid rgb(200,174,122);
+  height: 0.683vw;
+  background-color: rgb(255,180,122);
 }
+
+.searchIcon{
+  position: absolute;
+  margin-left: 9.765vw;
+  margin-top: 1.7vw;
+}
+.searchIcon p{
+  margin: 0;
+  color: rgb(107,153,104);
+  font-size: 2vw;
+}
+.searchIcon p:hover{
+  cursor: pointer;
+}
+
 .BEYOUTY{
   position: absolute;
   margin-left: 50%;
@@ -207,10 +221,11 @@ button:hover{
 }
 .BEYOUTY:hover{
   cursor: pointer;
+  filter: brightness(300%);
 }
 .carBox{
   position: absolute;
-  top: 0.9904vw;
+  top: 1.95vw;
   right: 6.88vw;
 }
 .carBox p{
@@ -218,24 +233,28 @@ button:hover{
   text-align: center;
   margin: 0;
   margin-bottom: -0.5vw;
-  font-size: 1.62vw;
+  font-size: 1.074vw;
 }
 .cart{
   background-image: url('../img/png/cart.png');
-  width: 2.74vw;
-  height: 2.14vw;
+  width: 1.8vw;
+  height: 1.41vw;
+}
+.cart:hover{
+  cursor: pointer;
 }
 .stickyTodaysSpecial{
   z-index: 1;
   position: absolute;
-  top: 5.84vw;
+  top: 6vw;
   font-family: 'WorkSans-Bold';
   margin-left: 4.8vw;
 }
 .stickyTodaysSpecial p{
-  margin-bottom: 0.7vw;
+  font-weight: 800;
+  margin-bottom: 0vw;
   color: white;
-  font-size:1.33vw;
+  font-size:1.171vw;
 }
 .stickyTodaysSpecial p:hover{
   color: rgb(255,213,53);
@@ -247,12 +266,13 @@ button:hover{
   position: relative;
   height: 2.25vw;
   width: 100%;
-  top: 7.5vw;
+  top: 7.9vw;
 }
 .stickyMenuNav a{
+  font-weight: 800;
   transition: 0.35s;
-  padding-left: 1.3vw;
-  padding-right: 1.3vw;
+  padding-left: 1.1vw;
+  padding-right: 1.1vw;
   color:white;
   font-family: 'WorkSans-Regular';
   font-size: 1.18vw;
@@ -283,13 +303,13 @@ button:hover{
 
 .stickyLogin{
   position: absolute;
-  top: 6vw;
+  top: 7.4vw;
   right: 4.8vw;
   font-family: 'WorkSans-Bold';
   display: flex;
   align-items:  center;
   font-size: 0.96vw;
-  height: 3.5vw;
+  height: 2vw;
 }
 .stickyLogin p{
   transition: 0.3s;
@@ -304,51 +324,197 @@ button:hover{
 .loginPng{
   margin-left: 1vw;
   background-image: url('../img/png/loginButton.png');
-  width: 1.2vw;
-  height: 0.9vw;
+  width: 1.7vw;
+  height: 1.46vw;
 }
 .stickyLogin:hover{
   cursor: pointer;
 }
+/* blackOverLay */
+.blackOverlay{
+  transition: 0.5s;
+  position: fixed;
+  z-index: 30;
+  background-color: rgb(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+}
+.adBoxBlackOverlay{
+  width: 40.955vw !important;
+  height: 4.7vw !important;
+  left: 1.911vw !important;
+  margin: 0 !important;
+  top: 2.2vw !important;
+  outline:1.54vw solid rgb(255,154,197,0.4) !important;
+}
+.blackLayerInside{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+}
+.adlayer{
+  top: 1.25vw !important;
+  filter: brightness(300%) !important;
+}
+.adlayer input{
+  height: 2.132vw !important;
+  width: 12.42vw !important;
+  padding-left: 10px;
+}
+.adlayer input::placeholder{
+  font-weight: 900;
+  color: rgb(44,27,17);
+}
+.yellowBag{
+  background-image: url("../img/png/yellow-bag.png") !important;
+  width: 10% !important;
+}
+.littleArrowLayer{
+  width: 2.2vw !important;
+  height: 2.2vw !important;
+}
+.littleArroHtmllayer{
+  font-size: 1.7vw !important;
+}
+.blackDivOneLayer{
+  right: -20vw !important;
+}
+.blackDivTwoLayer{
+  right: -20vw !important;
+}
+.adBoxBlackOverlay p{
+  color: rgb(54,22,3) !important;
+  margin-left: 5vw !important;
+  margin-top: 1.7vw !important;
+  font-size: 1.05vw !important;
+}
+.specialSalesBlackLayer{
+  width: 45.588vw !important;
+  top: 10vw !important;
+  height:12.86vw !important;
+}
 /* MAIN MAIN MAIN */
 main{
-  margin-top: 8.88vw;
+  margin-top: 10.05vw;
   padding-top: 0.1px;
   position: relative;
-  height: 51.85vw;
-  background-image: url('../img/coverBG.jpg');
+  height: 43.3vw;
+  /* background-image: url('../img/coverBG.jpg'); */
+}
+.subscribeArrow{
+  margin: 0;
+  position: absolute;
+  top: -2.8vw;
+  left: 5vw;
+   transform: rotate(90deg);
+}
+.subscribeArrow:hover{
+  cursor: pointer;
+}
+.subscribeArrow p{
+  transform: rotate(90deg);
+  margin: 0;
+  font-size: 5vw;
+  transform: scale(1,1.8);
+  font-weight: 100;
+  color: black;
+  font-family: 'WorkSans-Thin';
 }
 
+.mainBgDiv{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(220,101,137);
+}
+
+.narrowMainBgDiv{
+  position: absolute;
+  top: -20vw;
+  left: 49.6vw;
+  width: 80vw;
+  height:160vw;
+  background-color: rgb(255,180,122);
+  transform: rotate(42.5deg);
+}
+.empowerWomanBox{
+  position: absolute;
+  top: 6.65vw;
+  left: 18.08vw;
+}
+.empowerWomanBox p:nth-child(1){
+  margin: 0;
+  font-size: 3.91vw;
+  font-family: 'WorkSans-SemiBold';
+  color: black;
+}
+.empowerWomanBox p:nth-child(2){
+  margin: 0;
+  margin-top: -0.8vw;
+  font-size: 1.759vw;
+  color: black;
+}
+.itemsOnSale{
+  position: absolute;
+  left: 26.88vw;
+  top: 21vw;
+}
+.itemsOnSale p{
+  margin: 0;
+  font-size: 2.346vw;
+  font-family: 'WorkSans-SemiBold';
+  color: rgb(57,5,46);
+}
+.shopNow{
+  position: absolute;
+  width: 12.95vw;
+  height: 3.81vw;
+  background-color: rgb(57,5,46);
+  color:white;
+  font-size: 1.466vw;
+  top: 31.036vw;
+  left: 53.519vw;
+  border: none;
+}
 .dior{
   position: absolute;
   z-index: 13;
   width: 32.96vw;
   height: 47.55vw;
-  bottom: -7.15vw;;
+  bottom: -10.5vw;;
 }
 .crayon{
   position: absolute;
   z-index: 13;
-  width: 4.666vw;
-  height: 23.92vw;
-  bottom: -0.74vw;
-  left: 34.07vw;
+  width: 5.669vw;
+  height: 26.832vw;
+  bottom: -0.14vw;
+  left: 18.08vw;
 }
 .crayonShadow{
   position: absolute;
   z-index: 13;
-  left: 34.07vw;
-  bottom: -24.7vw;
-  width: 4.666vw;
-  height: 23.925vw;
+  left: 18.08vw;
+  bottom: -17.59vw;
+  width: 5.669vw;
+  height: 17.399vw;
 }
 .browBrush{
   position: absolute;
   z-index: 14;
-  right: 28.3vw;
-  bottom: -8.1vw;
-  width: 21.92vw;
-  height: 13.85vw;
+  left: 26vw;
+  bottom: -6.1vw;
+  width: 23.02vw;
+  height: 22.77vw;
 }
 .eyeBrush{
   position: absolute;
@@ -361,22 +527,22 @@ main{
 .girl{
   position: absolute;
   z-index: 13;
-  width: 39.11vw;
-  height: 54.74vw;
-  bottom: 0;
+  width: 32.795vw;
+  height: 46.43vw;
+  bottom: -0.6vw;
   right: 0;
 }
 
 /*  lineDownAnim animations*/
 .lineDownAnim{
   position: absolute;
-  width: 1px;
-  height: 10vw;
-  background-color: rgb(236,214,15);
-  left: 48.29vw;
-  top: 34vw;
+  width: 0.146vw;
+  height: 13.489vw;
+  background-color: rgb(236,208,109);
+  left: 49.95vw;
+  top: 26.39vw;
   animation-name: lineDownAnim;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 @keyframes lineDownAnim{
@@ -384,7 +550,7 @@ main{
     height: 1vw;
   }
   100%{
-    height: 10vw;
+    height: 13.489vw;
   }
 }
 /* triangle anim */
@@ -1567,9 +1733,11 @@ footer span{
   }
 
   main{
+    position: relative;
     background-image: url('../img/mobile-img/mainBG.jpg');
     height: 100vh;
   }
+
   .makeAppointentMobile{
     position: absolute;
     display: flex;

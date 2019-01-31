@@ -11,8 +11,8 @@ var stickySwitch = 0;
 function stickyMenuFunc(){
   if(this.oldScroll > this.scrollY  && stickySwitch===0){
     if(window.innerWidth > window.innerHeight){
-        stickyMenu.style.height = '9.63vw';
-        stickyBackgroundLayer.style.height = '9.63vw';
+        stickyMenu.style.height = '10.05vw';
+        stickyBackgroundLayer.style.height = '10.05vw';
     }else{
       stickyMenu.style.height = '17vw';
       stickyBackgroundLayer.style.height = '17vw';
@@ -39,11 +39,50 @@ megaMenuHoverBox.addEventListener('mouseenter',function(){
   stickyMenu.style.borderBottom = 'none'
 });
 megaMenuHoverBox.addEventListener('mouseleave',function(){
-  stickyMenu.style.height = '9.63vw';
+  stickyMenu.style.height = '10.05vw';
   megaMenu.style.height = '30.76vw';
   megaMenu.style.bottom = '-30.76';
   stickyMenu.style.borderBottom = '1px solid white'
 });
+
+// button on Click
+var shopNow = document.getElementsByClassName('shopNow')[0];
+shopNow.addEventListener('click',function(){
+  if(window.innerWidth > window.innerHeight){
+      stickyMenu.style.height = '10.05vw';
+      stickyBackgroundLayer.style.height = '10.05vw';
+      megaMenu.style.height = '30.76vw';
+      megaMenu.style.bottom = '-30.7vw';
+      stickyMenu.style.height = '40.55vw';
+      stickyMenu.style.borderBottom = 'none'
+  }else{
+    stickyMenu.style.height = '17vw';
+    stickyBackgroundLayer.style.height = '17vw';
+  }
+})
+
+// subscribeArrow subscribe
+// subscribeArrow subscribe
+// subscribeArrow subscribe
+var subscribeArrow = document.getElementsByClassName('subscribeArrow')[0];
+var blackOverlay = document.getElementsByClassName('blackOverlay')[0];
+subscribeArrow.addEventListener('click',function(){
+  blackOverlay.style.display = 'block';
+  setTimeout(function(){
+    blackOverlay.style.opacity = '1';
+  },10);
+})
+
+window.addEventListener('keydown', logKey);
+function logKey(e) {
+  if(e.code === 'Escape'){
+    console.log('horay');
+    blackOverlay.style.opacity = '0';
+    setTimeout(function(){
+      blackOverlay.style.display = 'none';
+    },500);
+  }
+}
 
 // car bridal
 // car bridal
