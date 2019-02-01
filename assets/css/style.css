@@ -28,6 +28,17 @@ div,main,section{
   background-size: 100% 100%;
   /* border: 1px solid black; */
 }
+img{
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+main img{
+  left: auto;
+  top: auto;
+}
 a{
   text-decoration: none;
   font-family: 'WorkSans-Regular';
@@ -352,11 +363,14 @@ button:hover{
   outline:1.54vw solid rgb(255,154,197,0.4) !important;
 }
 .blackLayerInside{
-  width: 100%;
-  height: 100%;
+  width: 44.035vw !important;
+  height: 7.78vw !important;
+  left: 0.371vw !important;
+  margin: 0 !important;
+  top: 0.66vw !important;
   position: absolute;
-  background: black;
-  opacity: 0.8;
+  background: transparent;
+  outline: 10vw solid rgb(0,0,0,0.6);
 }
 .adlayer{
   top: 1.25vw !important;
@@ -368,6 +382,7 @@ button:hover{
   padding-left: 10px;
 }
 .adlayer input::placeholder{
+  opacity: 0.8;
   font-weight: 900;
   color: rgb(44,27,17);
 }
@@ -395,9 +410,21 @@ button:hover{
   font-size: 1.05vw !important;
 }
 .specialSalesBlackLayer{
+  overflow: hidden;
   width: 45.588vw !important;
   top: 10vw !important;
   height:12.86vw !important;
+}
+.closeBlackLayer{
+  font-weight: 100;
+  font-size: 2vw;
+  color: white;
+  top: 10vw;
+  left: 42.8vw;
+  position: absolute;
+}
+.closeBlackLayer:hover{
+  cursor: pointer;
 }
 /* MAIN MAIN MAIN */
 main{
@@ -743,19 +770,19 @@ main{
 }
 
 .whatWeDoOne{
-  background-image: url('../img/whatWeDo/nail-laquer.jpg');
+  /* background-image: url('../img/whatWeDo/nail-laquer.jpg'); */
 }
 .whatWeDoTwo{
-  background-image: url('../img/whatWeDo/lips.jpg');
+  /* background-image: url('../img/whatWeDo/lips.jpg'); */
 }
 .whatWeDoThree{
-  background-image: url('../img/whatWeDo/eyes.jpg');
+  /* background-image: url('../img/whatWeDo/eyes.jpg'); */
 }
 .whatWeDoFour{
-  background-image: url('../img/whatWeDo/skin-care.jpg');
+  /* background-image: url('../img/whatWeDo/skin-care.jpg'); */
 }
 .whatWeDoFive{
-  background-image: url('../img/whatWeDo/liquid-powder.jpg');
+  /* background-image: url('../img/whatWeDo/liquid-powder.jpg'); */
 }
 
 .whatWeDoTextBox{
@@ -820,7 +847,7 @@ main{
 }
 
 .growth{
-  background-image: url('../img/growth.jpg');
+  /* background-image: url('../img/growth.jpg'); */
   position: absolute;
   margin: 0;
   left: 4.08vw;
@@ -891,24 +918,27 @@ main{
 .gridBox .redLine{
   margin-left: 27%;
 }
+.gridBox img{
+  height: 93%;
+}
 
 .olay{
-  background-image: url('../img/six-image-grid/olay.jpg');
+  /* background-image: url('../img/six-image-grid/olay.jpg'); */
 }
 .sede{
-  background-image: url('../img/six-image-grid/sede.jpg');
+  /* background-image: url('../img/six-image-grid/sede.jpg'); */
 }
 .gucci{
-  background-image: url('../img/six-image-grid/gucci.jpg');
+  /* background-image: url('../img/six-image-grid/gucci.jpg'); */
 }
 .cc{
-  background-image: url('../img/six-image-grid/cc.jpg');
+  /* background-image: url('../img/six-image-grid/cc.jpg'); */
 }
 .parfume{
-  background-image: url('../img/six-image-grid/parfume.jpg');
+  /* background-image: url('../img/six-image-grid/parfume.jpg'); */
 }
 .flower{
-  background-image: url('../img/six-image-grid/flower.jpg');
+  /* background-image: url('../img/six-image-grid/flower.jpg'); */
 }
 
 .greatBuysButton{
@@ -1127,7 +1157,7 @@ font-weight: 900;
   bottom: 0px;
   width: 23.23vw;
   height: 30.734vw;
-  background-image: url('../img/png/lipstick.png');
+  /* background-image: url('../img/png/lipstick.png'); */
 }
 .blurBox{
   z-index: 2;
@@ -1181,13 +1211,13 @@ font-weight: 900;
   width: 100%;
 }
 
-.firstCarPicOne{background-image: url('../img/png/car-one/carPicOne.png');}
-.firstCarPicTwo{background-image: url('../img/png/car-one/carPicTwo.png');}
-.firstCarPicThree{background-image: url('../img/png/car-one/carPicThree.png');}
-.firstCarPicFour{background-image: url('../img/png/car-one/carPicFour.png');}
-.firstCarPicFive{background-image: url('../img/png/car-one/carPicFive.png');}
-.firstCarPicSix{background-image: url('../img/png/car-one/carPicOne.png');}
-.firstCarPicSeven{background-image: url('../img/png/car-one/carPicTwo.png');}
+/* .firstCarPicOne{background-image: url('../img/png/car-one/carPicOne.png');} */
+/* .firstCarPicTwo{background-image: url('../img/png/car-one/carPicTwo.png');} */
+/* .firstCarPicThree{background-image: url('../img/png/car-one/carPicThree.png');} */
+/* .firstCarPicFour{background-image: url('../img/png/car-one/carPicFour.png');} */
+/* .firstCarPicFive{background-image: url('../img/png/car-one/carPicFive.png');} */
+/* .firstCarPicSix{background-image: url('../img/png/car-one/carPicOne.png');} */
+/* .firstCarPicSeven{background-image: url('../img/png/car-one/carPicTwo.png');} */
 
 
 .arrow{
@@ -1244,13 +1274,13 @@ font-weight: 900;
   box-shadow: inset 0px 0px 1.2vw 0.9vw rgb(249,216,193);
 }
 
-.bestSellers .firstCarPicOne{background-image: url('../img/png/car-two/carTwoPicOne.png');}
-.bestSellers .firstCarPicTwo{background-image: url('../img/png/car-two/carTwoPicTwo.png');}
-.bestSellers .firstCarPicThree{background-image: url('../img/png/car-two/carTwoPicThree.png');}
-.bestSellers .firstCarPicFour{background-image: url('../img/png/car-two/carTwoPicFour.png');}
-.bestSellers .firstCarPicFive{background-image: url('../img/png/car-two/carTwoPicFive.png');}
-.bestSellers .firstCarPicSix{background-image: url('../img/png/car-two/carTwoPicOne.png');}
-.bestSellers .firstCarPicSeven{background-image: url('../img/png/car-two/carTwoPicTwo.png');}
+/* .bestSellers .firstCarPicOne{background-image: url('../img/png/car-two/carTwoPicOne.png');} */
+/* .bestSellers .firstCarPicTwo{background-image: url('../img/png/car-two/carTwoPicTwo.png');} */
+/* .bestSellers .firstCarPicThree{background-image: url('../img/png/car-two/carTwoPicThree.png');} */
+/* .bestSellers .firstCarPicFour{background-image: url('../img/png/car-two/carTwoPicFour.png');} */
+/* .bestSellers .firstCarPicFive{background-image: url('../img/png/car-two/carTwoPicFive.png');} */
+/* .bestSellers .firstCarPicSix{background-image: url('../img/png/car-two/carTwoPicOne.png');} */
+/* .bestSellers .firstCarPicSeven{background-image: url('../img/png/car-two/carTwoPicTwo.png');} */
 
 /* trending section */
 .trendingLooksSection{
@@ -1280,7 +1310,7 @@ font-weight: 900;
 }
 
 .trendingLooksSection .leftImage{
-  background-image: url('../img/png/handsPng.png');
+  /* background-image: url('../img/png/handsPng.png'); */
   bottom:-2.227vw;
   height: 34.15vw;
 }
@@ -1293,13 +1323,14 @@ font-weight: 900;
 }
 
 .trendingThreePicWraper div{
+  position: relative;
   width: 22.27vw;
   height: 22.27vw;
   margin-left: 1.85vw;
 }
-.trendingPicOne{background-image: url('../img/trendingPicOne.jpg');}
-.trendingPicTwo{background-image: url('../img/trendingPicTwo.jpg');}
-.trendingPicThree{background-image: url('../img/trendingPicThree.jpg');}
+/* .trendingPicOne{background-image: url('../img/trendingPicOne.jpg');} */
+/* .trendingPicTwo{background-image: url('../img/trendingPicTwo.jpg');} */
+/* .trendingPicThree{background-image: url('../img/trendingPicThree.jpg');} */
 
 /* INSTAGRAM SECTION */
 .gridBoxSpecial{
@@ -1341,17 +1372,17 @@ font-weight: 900;
 .gridBoxSpecial div:nth-child(2){
   grid-row: 1/4;
   grid-column: 2/3;
-  background-image: url('../img/instagram-grid/bigPicGrid.jpg');
+  /* background-image: url('../img/instagram-grid/bigPicGrid.jpg'); */
 }
 .gridBoxSpecial div:nth-child(3){
   grid-row: 1/2;
   grid-column: 3/4;
-  background-image: url('../img/instagram-grid/topRight.jpg');
+  /* background-image: url('../img/instagram-grid/topRight.jpg'); */
 }
 .gridBoxSpecial div:nth-child(4){
   grid-row: 2/3;
   grid-column: 3/4;
-  background-image: url('../img/instagram-grid/rightMid.jpg');
+  /* background-image: url('../img/instagram-grid/rightMid.jpg'); */
 }
 .gridBoxSpecial div:nth-child(5){
   grid-row: 3/4;
@@ -1413,12 +1444,13 @@ font-weight: 900;
   margin-left: 0.666%;
 }
 .carDivOne,.carDivTwo,.carDivThree{
+  position: relative;
   width: 100%;
   height:51.28%;
 }
-.carDivOne{background-image: url('../img/car-three/picOne.jpg');}
-.carDivTwo{background-image: url('../img/car-three/picTwo.jpg');}
-.carDivThree{background-image: url('../img/car-three/picThree.jpg');}
+/* .carDivOne{background-image: url('../img/car-three/picOne.jpg');} */
+/* .carDivTwo{background-image: url('../img/car-three/picTwo.jpg');} */
+/* .carDivThree{background-image: url('../img/car-three/picThree.jpg');} */
 
 .yellowSquareContainer{
   margin-top: 2.59vw;
@@ -1547,7 +1579,7 @@ font-weight: 900;
   height: 35vw;
   margin-left: 50%;
   left: -11.4vw;
-  background-image: url('../img/png/BBcream.png');
+  /* background-image: url('../img/png/BBcream.png'); */
   top: 11.5vw;
 }
 

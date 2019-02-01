@@ -66,11 +66,27 @@ shopNow.addEventListener('click',function(){
 // subscribeArrow subscribe
 var subscribeArrow = document.getElementsByClassName('subscribeArrow')[0];
 var blackOverlay = document.getElementsByClassName('blackOverlay')[0];
+var closeBlackLayer = document.getElementsByClassName('closeBlackLayer')[0];
+var littleArrowLayer = document.getElementsByClassName('littleArrowLayer')[0];
 subscribeArrow.addEventListener('click',function(){
   blackOverlay.style.display = 'block';
   setTimeout(function(){
     blackOverlay.style.opacity = '1';
   },10);
+});
+
+closeBlackLayer.addEventListener('click',function(){
+  blackOverlay.style.opacity = '0';
+  setTimeout(function(){
+    blackOverlay.style.display = 'none';
+  },500);
+})
+
+littleArrowLayer.addEventListener('click',function(){
+  blackOverlay.style.opacity = '0';
+  setTimeout(function(){
+    blackOverlay.style.display = 'none';
+  },500);
 })
 
 window.addEventListener('keydown', logKey);
@@ -147,9 +163,9 @@ function logKey(e) {
 //   }
 // },3500);
 
-// wht we sell 3pic hover anim
-// wht we sell 3pic hover anim
-// wht we sell 3pic hover anim
+// wht we sell 5pic hover anim
+// wht we sell 5pic hover anim
+// wht we sell 5pic hover anim
 var whatWeDoOne = document.getElementsByClassName('whatWeDoJS');
 var whatWeDoTextBox = document.getElementsByClassName('whatWeDoTextBox');
 var fontFam = document.getElementsByClassName('fontFam');
