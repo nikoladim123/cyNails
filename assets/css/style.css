@@ -521,11 +521,12 @@ main{
 .dior{
   position: absolute;
   z-index: 13;
-  width: 32.96vw;
+  width: 31.3vw;
+  /* width: 32.96vw; */
   height: 45.55vw;
   /* height: 47.55vw; */
   bottom: -5.6vw;
-  left: -1.9vw;
+  left: -1.15vw;
   /* left: -4.2vw; */
   /* bottom: -10.5vw;; */
 }
