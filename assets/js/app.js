@@ -3,6 +3,27 @@ window.onscroll = function(){
   stickyMenuFunc();
 };
 
+window.onload = function(){
+  crayonAnim();
+}
+
+// crayon animation
+// crayon animation
+// crayon animation
+var crayon = document.getElementsByClassName('crayon')[0];
+var crayonShadow = document.getElementsByClassName('crayonShadow')[0];
+var eyeBrush = document.getElementsByClassName('eyeBrush')[0];
+var crayonShadow = document.getElementsByClassName('crayonShadow')[0];
+var smoke = document.getElementsByClassName('smoke')[0];
+function crayonAnim(){
+  crayon.style.bottom = '-0.14vw';
+  crayonShadow.style.bottom = '-17.59vw';
+  crayonShadow.style.opacity = '1';
+  smoke.style.opacity = '1';
+  smoke.style.left = '0';
+  smoke.style.width = '32.96vw';
+};
+
 //sticky menu
 var stickyMenu = document.getElementsByClassName('stickyMenu')[0];
 var stickyBackgroundLayer = document.getElementsByClassName('stickyBackgroundLayer')[0];
