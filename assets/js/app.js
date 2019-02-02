@@ -20,8 +20,8 @@ function crayonAnim(){
   crayonShadow.style.bottom = '-17.59vw';
   crayonShadow.style.opacity = '1';
   smoke.style.opacity = '1';
-  smoke.style.left = '-18.8vw';
-  smoke.style.width = '51.5vw';
+  smoke.style.left = '-18.5vw';
+  smoke.style.width = '51vw';
   smoke.style.height = '65vw';
   smoke.style.bottom = "-13.5vw";
 };

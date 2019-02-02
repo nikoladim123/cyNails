@@ -346,6 +346,7 @@ button:hover{
 }
 .stickyLogin:hover{
   cursor: pointer;
+  filter: brightness(200%);
 }
 /* blackOverLay */
 .blackOverlay{
@@ -441,6 +442,7 @@ main{
   /* background-image: url('../img/coverBG.jpg'); */
 }
 .subscribeArrow{
+  z-index: 14;
   margin: 0;
   position: absolute;
   top: -2.8vw;
@@ -521,7 +523,7 @@ main{
 .dior{
   position: absolute;
   z-index: 13;
-  width: 31.3vw;
+  width: 31.4vw;
   /* width: 32.96vw; */
   height: 45.55vw;
   /* height: 47.55vw; */
