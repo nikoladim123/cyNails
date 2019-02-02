@@ -522,20 +522,24 @@ main{
   position: absolute;
   z-index: 13;
   width: 32.96vw;
-  height: 47.55vw;
-  left: -4.2vw;
-  bottom: -10.5vw;;
+  height: 45.55vw;
+  /* height: 47.55vw; */
+  bottom: -5.6vw;
+  left: -1.9vw;
+  /* left: -4.2vw; */
+  /* bottom: -10.5vw;; */
 }
 .smoke{
-  transition: 6s;
-  opacity: 0.2;
+  transition-timing-function: linear;
+  transition: 5s;
+  opacity: 0.1;
   position: absolute;
   z-index: 13;
   /* width: 32.96vw; */
   width: 30vw;
-  left:1.45vw;
+  left:-5vw;
   height: 47.55vw;
-  bottom: -10.5vw;;
+  bottom: -8vw;;
 
 }
 .crayon{
