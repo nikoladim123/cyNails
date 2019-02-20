@@ -1801,6 +1801,9 @@ footer span{
   .mmTodaysSpecial p{
     font-size: 5.5vw;
   }
+  .mmTodaysSpecial p:hover{
+    cursor: pointer;
+  }
   .mmImageFlexBox{
     flex-wrap: wrap;
     /* width: 50vw; */
