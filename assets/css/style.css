@@ -111,7 +111,7 @@ button:hover{
   transition: 0.4s;
   position: absolute;
   bottom: -30.7vw;
-  left: 0;
+  left: -3vw;
   width: 100vw;
   height: 30.7vw;
   background: rgb(246,226,219);
@@ -190,7 +190,7 @@ button:hover{
   border-bottom: 1px solid rgb(220,124,181);
 }
 .stickyMenuInside{
-  background-color: rgb(52,11,76,0.8);
+  background-color: rgb(52,11,76,0.85);
   position: absolute;
   left: 0px;
   top: 0px;
@@ -272,6 +272,7 @@ button:hover{
   cursor: pointer;
 }
 .stickyMenuNav{
+  margin-left: 3vw;
   display: flex;
   justify-content: center;
   position: relative;
@@ -679,7 +680,7 @@ main{
 .whatWeSellBnd h4{
   font-weight: 100;
   margin-top: 1.4vw;
-  margin-left: 15vw;
+  margin-left: 20vw;
   margin-bottom: -2.6vw;
 }
 .whatWeSellBnd h4 span{
@@ -1105,6 +1106,7 @@ main{
 /*  threeCarBigBox big box*/
 .threeCarBigBox{
   position: relative;
+  margin-bottom: 10vw;
 }
 .carSelectBox{
   z-index: 6;
@@ -1372,6 +1374,7 @@ font-weight: 900;
 /*  SECTION NEWS AND EVENTS */
 .newsAndEventsSection{
   position: relative;
+  margin-bottom: 14vw;
   /* border: 1px solid green; */
 }
 .newsAndEventsSection a{
@@ -1401,7 +1404,7 @@ font-weight: 900;
   bottom: 0px;
   margin-left: 50%;
   left:-45.5vw;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .carouselThree{
@@ -1579,9 +1582,12 @@ font-weight: 900;
   border-top: 0.37vw solid rgb(243,230,228);
   background-color: rgb(245,236,235);
 }
+.needHelpSection .advertBox p{
+  color: black;
+}
 .needHelpSection .stickySocialMedia{
   position: absolute;
-  top: 4.97vw;
+  top: 6.97vw;
   right: 2.86vw;
 }
 .needHelpSection .stickySocialMedia .fa-facebook,
@@ -1704,7 +1710,8 @@ footer span{
   .crayon,
   .crayonShadow,
   .smoke,
-  .lineDownAnim
+  .lineDownAnim,
+  .carThreeArrowContainer
   {
     display: none;
   }
@@ -1740,7 +1747,7 @@ footer span{
     height: 25.27vw;
   }
   .stickyTodaysSpecial{
-    margin-left: 9.444vw;
+    margin-left: 3.444vw;
   }
   .stickyTodaysSpecial p{
     color: white;
@@ -1751,6 +1758,9 @@ footer span{
     height:13.611vw;
     left: -14vw;
     margin-top: 3.055vw;
+  }
+  .searchIcon p{
+    font-size: 5vw;
   }
   .stickyLogin{
     top: 9vw;
@@ -1763,6 +1773,7 @@ footer span{
     height: 2.777vw;
   }
   .stickyMenuNav{
+    margin-left: -3vw;
     height: 6vw;
     top: 19vw;
   }
@@ -1780,6 +1791,34 @@ footer span{
   .mmFreeShiping{
     font-size: 3.2vw;
     margin-top: 1.2vw;
+  }
+  .megaMenu{
+    left: 3vw;
+  }
+  .mmTodaysSpecial{
+    height: auto;
+  }
+  .mmTodaysSpecial p{
+    font-size: 5.5vw;
+  }
+  .mmImageFlexBox{
+    flex-wrap: wrap;
+    /* width: 50vw; */
+    margin-left: auto;
+    left: auto;
+    position: relative;
+  }
+  .mmpic{
+    margin: 0;
+    width: 30.94vw;
+    height: 28.94vw;
+  }
+  .mmPicBox p{
+    font-size: 6.61vw;
+  }
+  .mmPicBoxMobFive{
+    position: relative;
+    top: -5vw;
   }
 /* main mobile */
   main{
@@ -1935,7 +1974,7 @@ footer span{
     width: 10vw;
     height: 10vw;
     margin-left: 5vw;
-    margin-top: 1vw;
+    margin-top: 0.5vw;
     border: 4px solid black;
     transform: rotate(45deg);
   }
@@ -2044,7 +2083,7 @@ footer span{
     background-color: rgb(246,212,209);
   }
   .arrow{
-    top: 0.8vw;
+    top: 0.3vw;
     left: 3.8vw;
     border-color: black;
     border-width: 3px;
@@ -2161,12 +2200,35 @@ footer span{
   .carDivOne, .carDivTwo, .carDivThree{
     height: 70vw;
   }
+  .carDivTwo{
+    margin-top: 10vw;
+  }
   .YellowSquare{
-
+    width: 8.45vw;
+    height: 8.45vw;
+    margin-right: 3vw;
+  }
+  .YellowSquare p{
+    font-size: 3vw;
+  }
+  h3{
+    font-size: 5.5vw;
   }
   #hideMobile{
     display: none;
   }
+  .loremIpsumText p {
+    font-size: 3.2vw;
+    margin: 0;
+    line-height: 1.4;
+    margin-bottom: 2.5vw;
+}
+.newsAndEventsSection a {
+    color: black;
+    font-size: 4.336vw;
+    color: rgb(85,85,85);
+    text-decoration: underline;
+}
 
   /* BODY CREAM SECTION */
   .bodyCream{

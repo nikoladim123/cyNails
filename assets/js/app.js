@@ -65,13 +65,14 @@ megaMenuHoverBox.addEventListener('mouseenter',function(){
     stickyMenu.style.height = '40.55vw';
     stickyMenu.style.borderBottom = 'none'
   }else if(window.innerWidth < window.innerHeight){
-    megaMenu.style.height = '55w';
-    megaMenu.style.bottom = '-30.7vw';
-    stickyMenu.style.height = '55vw';
+    megaMenu.style.height = '120vw';
+    megaMenu.style.bottom = '-120vw';
+    stickyMenu.style.height = '151.8vw';
     stickyMenu.style.borderBottom = 'none'
   }
 
 });
+
 megaMenuHoverBox.addEventListener('mouseleave',function(){
   if(window.innerWidth > window.innerHeight){
     stickyMenu.style.height = '10.05vw';
@@ -88,20 +89,20 @@ megaMenuHoverBox.addEventListener('mouseleave',function(){
 });
 
 // button on Click
-var shopNow = document.getElementsByClassName('shopNow')[0];
-shopNow.addEventListener('click',function(){
-  if(window.innerWidth > window.innerHeight){
-      stickyMenu.style.height = '10.05vw';
-      stickyBackgroundLayer.style.height = '10.05vw';
-      megaMenu.style.height = '30.76vw';
-      megaMenu.style.bottom = '-30.7vw';
-      stickyMenu.style.height = '40.55vw';
-      stickyMenu.style.borderBottom = 'none'
-  }else{
-    stickyMenu.style.height = '17vw';
-    stickyBackgroundLayer.style.height = '17vw';
-  }
-})
+// var shopNow = document.getElementsByClassName('shopNow')[0];
+// shopNow.addEventListener('click',function(){
+//   if(window.innerWidth > window.innerHeight){
+//       stickyMenu.style.height = '10.05vw';
+//       stickyBackgroundLayer.style.height = '10.05vw';
+//       megaMenu.style.height = '30.76vw';
+//       megaMenu.style.bottom = '-30.7vw';
+//       stickyMenu.style.height = '40.55vw';
+//       stickyMenu.style.borderBottom = 'none'
+//   }else{
+//     stickyMenu.style.height = '17vw';
+//     stickyBackgroundLayer.style.height = '17vw';
+//   }
+// })
 
 // subscribeArrow subscribe
 // subscribeArrow subscribe
