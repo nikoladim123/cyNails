@@ -34,11 +34,14 @@ var stickySwitch = 0;
 function stickyMenuFunc(){
   if(this.oldScroll > this.scrollY  && stickySwitch===0){
     if(window.innerWidth > window.innerHeight){
+
+    }
+    if(window.innerWidth > window.innerHeight){
         stickyMenu.style.height = '10.05vw';
         stickyBackgroundLayer.style.height = '10.05vw';
     }else{
-      stickyMenu.style.height = '17vw';
-      stickyBackgroundLayer.style.height = '17vw';
+      stickyMenu.style.height = '25.27vw';
+      stickyBackgroundLayer.style.height = '25.27vw';
     }
   }
   else {
@@ -56,16 +59,32 @@ function stickyMenuFunc(){
 var megaMenuHoverBox = document.getElementsByClassName('megaMenuHoverBox')[0];
 var megaMenu = document.getElementsByClassName('megaMenu')[0];
 megaMenuHoverBox.addEventListener('mouseenter',function(){
-  megaMenu.style.height = '30.76vw';
-  megaMenu.style.bottom = '-30.7vw';
-  stickyMenu.style.height = '40.55vw';
-  stickyMenu.style.borderBottom = 'none'
+  if(window.innerWidth > window.innerHeight){
+    megaMenu.style.height = '30.76vw';
+    megaMenu.style.bottom = '-30.7vw';
+    stickyMenu.style.height = '40.55vw';
+    stickyMenu.style.borderBottom = 'none'
+  }else if(window.innerWidth < window.innerHeight){
+    megaMenu.style.height = '55w';
+    megaMenu.style.bottom = '-30.7vw';
+    stickyMenu.style.height = '55vw';
+    stickyMenu.style.borderBottom = 'none'
+  }
+
 });
 megaMenuHoverBox.addEventListener('mouseleave',function(){
-  stickyMenu.style.height = '10.05vw';
-  megaMenu.style.height = '30.76vw';
-  megaMenu.style.bottom = '-30.76';
-  stickyMenu.style.borderBottom = '1px solid white'
+  if(window.innerWidth > window.innerHeight){
+    stickyMenu.style.height = '10.05vw';
+    megaMenu.style.height = '30.76vw';
+    megaMenu.style.bottom = '-30.76';
+    stickyMenu.style.borderBottom = '1px solid white'
+  }else if(window.innerWidth < window.innerHeight){
+    stickyMenu.style.height = '25.27vw';
+    megaMenu.style.height = '30.7vw';
+    megaMenu.style.bottom = '-30.7vw';
+    stickyMenu.style.borderBottom = '1px solid white'
+  }
+
 });
 
 // button on Click

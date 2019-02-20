@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Oranienbaum" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -60,18 +61,13 @@
               <div class="mmPurpleStripe"></div>
             </div>
           </div>
-          <a href="#">ABOUT US</a>
+          <a href="#" id="mobileMargin">ABOUT US</a>
           <a href="#">CONTACT</a>
-          <a href="#">BLOG</a>
+          <a href="#" id="removePhoneBlog">BLOG</a>
         </div>
         <div class="stickyLogin">
           <p>Login</p>
           <div class="loginPng"></div>
-        </div>
-        <div class="burgerMenuMobile"><!-- burger display only for mobile -->
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
         </div>
       </div>
     </div>
@@ -114,13 +110,32 @@
       </div>
       <button class="shopNow" type="button" name="button">Shop Now</button>
       <div class="lineDownAnim"></div>
-      <img class="girl" src="assets/img/png/girl.png" alt="picture of dior">
+
+      <picture>
+        <source media="(orientation:landscape)" srcset="assets/img/png/girl.png">
+        <source media="(orientation:portrait)" srcset="assets/img/mobile-img/mobilePng/girl.png">
+        <img class='girl' src="" alt="Flowers">
+      </picture>
+
+      <!-- <img class="girl" src="assets/img/png/girl.png" alt="picture of dior"> -->
       <img class="smoke" src="assets/img/png/smoke.png" alt="picture of dior">
       <img class="dior" src="assets/img/png/diorY.png" alt="picture of dior">
       <img class="crayon" src="assets/img/png/crayon.png" alt="picture of dior">
       <img class="crayonShadow" src="assets/img/png/crayonShadow.png" alt="picture of dior">
-      <img class="browBrush" src="assets/img/png/browBrush.png" alt="eyebrow brush">
-      <img class="eyeBrush" src="assets/img/png/eyeBrush.png" alt="picture of dior">
+
+      <picture>
+        <source media="(orientation:landscape)" srcset="assets/img/png/browBrush.png">
+        <source media="(orientation:portrait)" srcset="assets/img/mobile-img/mobilePng/browBrush.png">
+        <img class="browBrush" src="" alt="Flowers">
+      </picture>
+
+      <img class="blackBrowBrush" src="assets/img/mobile-img/mobilePng/BlackBrowBrush.png" alt="">
+
+      <picture>
+        <source media="(orientation:landscape)" srcset="assets/img/png/eyeBrush.png">
+        <source media="(orientation:portrait)" srcset="assets/img/mobile-img/mobilePng/eyeBrush.png">
+        <img class="eyeBrush" src="" alt="Flowers">
+      </picture>
     </main>
 
     <!-- <div class="bridalSection">
@@ -713,7 +728,7 @@
         <div class="">
           <h4>Need Help?</h4>
           <p>NailsPro@NailPro.com</p>
-          <p>217-225-2874</p>
+          <a href="#">217-225-2874</a>
         </div>
         <div class="">
           <h4>Products</h4>
@@ -744,8 +759,6 @@
       <div class="nailsPng"></div>
       <p><span>&#169;</span> 2018 NailsPro INC &nbsp; Terms of Service &nbsp; Privacy Policies</p>
     </footer>
-
-
 
 
     <script type="text/javascript" src="assets/js/app.js">

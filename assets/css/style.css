@@ -190,7 +190,7 @@ button:hover{
   border-bottom: 1px solid rgb(220,124,181);
 }
 .stickyMenuInside{
-  background-color: rgb(52,11,76,0.9);
+  background-color: rgb(52,11,76,0.8);
   position: absolute;
   left: 0px;
   top: 0px;
@@ -510,6 +510,7 @@ main{
   color: rgb(57,5,46);
 }
 .shopNow{
+  z-index: 14;
   position: absolute;
   width: 12.95vw;
   height: 3.81vw;
@@ -573,6 +574,13 @@ main{
   bottom: -6.1vw;
   width: 23.02vw;
   height: 22.77vw;
+}
+.blackBrowBrush{
+  position: absolute;
+  width: 21.942vw;
+  height: 13.862vw;
+  right: 5vw;
+  bottom: -5vw;
 }
 .eyeBrush{
   position: absolute;
@@ -1610,6 +1618,9 @@ nav a{
   color: rgb(85,85,85);
   font-size: 1.3vw;
 }
+nav a:hover{
+  text-decoration: underline;
+}
 nav div:nth-child(1){
   position: relative;
   left: 3.93vw;
@@ -1668,7 +1679,8 @@ footer span{
 .mobileOnlyArrowsGrid,
 .carouselDotsMobileOnly,
 .dotsCarOneMobileOnly,
-.dotsCarTwoMobileOnly
+.dotsCarTwoMobileOnly,
+.blackBrowBrush
 {
   display: none;
 }
@@ -1676,14 +1688,23 @@ footer span{
 /* PORTRAIT BREAKPOINT */
 /* PORTRAIT BREAKPOINT */
 @media(orientation:portrait){
-  .stickyMenuNav,
-  .stickyLogin,
+  /* .stickyMenuNav, */
   .nailsPng,
   .triangleBox,
   .bodyCreamTextBox p,
   .priceOff,
   .greatBuysButton,
-  .blurBox
+  .blurBox,
+  .carBox,
+  #removePhoneBlog,
+  .subscribeArrow,
+  .empowerWomanBox,
+  .itemsOnSale,
+  .dior,
+  .crayon,
+  .crayonShadow,
+  .smoke,
+  .lineDownAnim
   {
     display: none;
   }
@@ -1693,41 +1714,87 @@ footer span{
   .mobileOnlyArrowsGrid,
   .carouselDotsMobileOnly,
   .dotsCarOneMobileOnly,
-  .dotsCarTwoMobileOnly
+  .dotsCarTwoMobileOnly,
+  .blackBrowBrush
   {
     display: block;
   }
 
 
-  .burgerMenuMobile{
-    position: absolute;
-    display: block;
-    width: 12.5vw;
-    top:5vw;
-    right:6.4vw;
-  }
-  .burgerMenuMobile div{
-    float: right;
-    margin-bottom: 1.1vw;
-    width: 100%;
-    height: 1.1vw;
-    background-color: rgb(240,0,96);
-  }
-  .burgerMenuMobile div:nth-child(1){
-    width: 65%;
-  }
   .stickyMenu{
-    border-color: rgb(240,0,96);
+    height: 25.27vw;
+    border-color: none;
   }
   .stickyTodaysSpecial p{
     font-size: 5.5vw;
     color: rgb(240,0,96);
   }
-
+  .stickyMenuInside{
+    height: 25.27vw;
+  }
+  .stickyBgInLayer{
+    height: 25.27vw;
+    background-image: url("../img/mobile-img/stickyBG.jpg");
+  }
+  .stickyBackgroundLayer{
+    height: 25.27vw;
+  }
+  .stickyTodaysSpecial{
+    margin-left: 9.444vw;
+  }
+  .stickyTodaysSpecial p{
+    color: white;
+    font-size: 2.8vw;
+  }
+  .BEYOUTY{
+    width: 31.944vw;
+    height:13.611vw;
+    left: -14vw;
+    margin-top: 3.055vw;
+  }
+  .stickyLogin{
+    top: 9vw;
+  }
+  .stickyLogin p{
+    font-size: 3.5vw;
+  }
+  .loginPng{
+    width: 3.33vw;
+    height: 2.777vw;
+  }
+  .stickyMenuNav{
+    height: 6vw;
+    top: 19vw;
+  }
+  .stickyMenuNav a{
+    font-size: 3.9vw;
+  }
+  .shop{
+    left: 23vw;
+  }
+  #mobileMargin{
+    margin-left: 24vw;
+    padding-right: 5vw;
+  }
+  /* mega */
+  .mmFreeShiping{
+    font-size: 3.2vw;
+    margin-top: 1.2vw;
+  }
+/* main mobile */
   main{
+    margin-top: 24.9vw;
     position: relative;
     background-image: url('../img/mobile-img/mainBG.jpg');
-    height: 100vh;
+    height: 115vw;
+    margin-bottom: 38vw;
+  }
+
+  .narrowMainBgDiv{
+    top:7vw;
+    left: 18.6vw;
+    width: 120vw;
+    transform: rotate(40.5deg);
   }
 
   .makeAppointentMobile{
@@ -1748,11 +1815,46 @@ footer span{
     width: 12vw;
     height: 12vw;
   }
-  .lineDownAnim{
+  .shopNow{
+    width: 45.4vw;
+    height: 12.53vw;
+    font-size: 18px;
+    background-color: rgb(57,5,46,0.4);
+    top: auto;
+    left: auto;
+    right: 5.292vw;
+    bottom: -24vw;
+    border: 1.392vw solid white;
+    outline: 1px solid rgb(57,5,46,0.4);
+  }
+  .shopNow:hover{
+    background-color: rgb(57,5,46,0.7);
+  }
+  /* .lineDownAnim{
     top:85vh;
     left: 50vw;
+  } */
+  .girl{
+    width: 87.22vw;
+    height: 121.94vw;
   }
-  /* BRIDAL SECTION */
+  .browBrush{
+    width: 44.166vw;
+    height: 52.777vw;
+    bottom: -25vw;
+    left: 0;
+  }
+  .blackBrowBrush{
+    z-index: 14;
+    width: 48.888vw;
+    height: 31.11vw;
+    bottom: -19vw;
+    right: 11vw;
+  }
+  .eyeBrush{
+    width: 15.27vw;
+    height: 51.666vw;
+  }
 
   /* SPECIAL OFFER SECTION!MOBILE */
   .specialOfferSection{
