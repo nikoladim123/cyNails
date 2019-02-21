@@ -7,6 +7,49 @@ window.onload = function(){
   crayonAnim();
 }
 
+// shopingCheckout
+// shopingCheckout
+// shopingCheckout
+var checkoutX = document.getElementsByClassName('checkoutX')[0];
+var shopingCheckout = document.getElementsByClassName('shopingCheckout')[0];
+var cart = document.getElementsByClassName('cart')[0];
+
+checkoutX.addEventListener('click',()=>{
+  shopingCheckout.style.right = '-44vw';
+})
+cart.addEventListener('click',()=>{
+  shopingCheckout.style.right = '0vw';
+})
+//plus logic
+var plus = document.getElementsByClassName('plus');
+
+for (var i = 0; i < plus.length; i++) {
+    console.log(i);
+    plus[i].addEventListener('click',(e)=>{
+      e.target.parentElement.children[1].innerText = parseInt(e.target.parentElement.children[1].innerText) +1;
+  })
+}
+//minus logic
+var minus = document.getElementsByClassName('minus');
+for (var i = 0; i < minus.length; i++) {
+    console.log(i);
+    minus[i].addEventListener('click',(e)=>{
+      if (parseInt(e.target.parentElement.children[1].innerText)>0) {
+        e.target.parentElement.children[1].innerText = parseInt(e.target.parentElement.children[1].innerText) -1;
+      }
+  })
+}
+// remove item logic
+var discard = document.getElementsByClassName('discard');
+for (var i = 0; i < discard.length; i++) {
+  discard[i].addEventListener('click',(e)=>{
+    console.log(e.target.parentNode.parentNode);
+    // e.target.parentElement.parentElement.removeChild(e.target.parentNode);
+    e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+  })
+}
+
+
 // crayon animation
 // crayon animation
 // crayon animation
