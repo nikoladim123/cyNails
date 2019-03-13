@@ -754,6 +754,9 @@ main{
 }
 /* triangle anim end*/
 /* whatWeSellBnd bnd */
+.whatWeSellBnd{
+  overflow: hidden;
+}
 .whatWeSellBnd p:nth-child(1){
   margin: 0;
   margin-top: 13vw;
@@ -773,8 +776,14 @@ main{
 .whatWeSellBnd h4{
   font-weight: 100;
   margin-top: 1.4vw;
-  margin-left: 20vw;
+  /* margin-left: 20vw; */
   margin-bottom: -2.6vw;
+}
+.whatWeSellHfour{
+  transition: 2s;
+  width: 2000vw;
+  letter-spacing: 100vw;
+  margin-left: 100vw;
 }
 .whatWeSellBnd h4 span{
   font-family: 'Oranienbaum', serif;
@@ -877,11 +886,15 @@ main{
 
 /* whatWeDo */
 .whatWeDo{
+  transition: 2s;
+  position: relative;
+  left: 100%;
+  width: 200%;
   height: 45.9vw;
   display: flex;
   justify-content: space-between;
-  padding-left: 10vw;
-  padding-right: 11vw;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .whatWeDo>div>div{
   width: 100%;

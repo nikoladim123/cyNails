@@ -1,10 +1,31 @@
 //window onscroll
 window.onscroll = function(){
   stickyMenuFunc();
+  whatWeDofun();
 };
 
 window.onload = function(){
   crayonAnim();
+}
+
+// what we do anim
+// what we do anim
+// what we do anim
+var whatWeDo = document.getElementsByClassName('whatWeDo')[0];
+function whatWeDofun(){
+  if(whatWeDo.getBoundingClientRect().y < window.innerHeight/100 * 60){
+    whatWeDo.style.left ="0";
+    whatWeDo.style.width = '80%';
+    whatWeSellHfourfun();
+  }
+}
+
+// whatwedo  h4 animation
+// whatwedo  h4 animation
+var whatWeSellHfour = document.getElementsByClassName('whatWeSellHfour')[0];
+function whatWeSellHfourfun(){
+  whatWeSellHfour.style.marginLeft = '20vw';
+  whatWeSellHfour.style.letterSpacing = '0';
 }
 
 // shopingCheckout
