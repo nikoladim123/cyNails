@@ -2,6 +2,8 @@
 window.onscroll = function(){
   stickyMenuFunc();
   whatWeDofun();
+  gridBoxImageFun();
+  leftImageLipstickFun();
 };
 
 window.onload = function(){
@@ -31,6 +33,39 @@ function whatWeSellHfourfun(){
       whatWeSellHfour.style.opacity = '1';
     },1000);
 }
+
+// grid olay and stuff animation
+// grid olay and stuff animation
+// grid olay and stuff animation
+var gridBoxImage = document.getElementsByClassName('gridBoxImage');
+function gridBoxImageFun(){
+  if(gridBoxImage[0].getBoundingClientRect().y < window.innerHeight/100 * 60){
+    gridBoxFunc();
+    for (var i = 0; i < gridBoxImage.length; i++) {
+      gridBoxImage[i].style.top = '0';
+      gridBoxImage[i].style.opacity = '1';
+      gridBoxImage[i].style.transform = 'rotate(0deg)';
+    }
+  }
+}
+// gridbox animation
+var gridBox = document.getElementsByClassName('gridBox')[0];
+function gridBoxFunc(){
+  gridBox.style.top = '0';
+}
+
+// leftImageLipstick anim
+// leftImageLipstick anim
+// leftImageLipstick anim
+var leftImageLipstick = document.getElementsByClassName('leftImageLipstick')[0];
+function leftImageLipstickFun(){
+  if(leftImageLipstick.getBoundingClientRect().y < window.innerHeight/100 * 60){
+    leftImageLipstick.style.opacity ='1';
+    leftImageLipstick.style.left = '0';
+  }
+}
+
+
 
 // shopingCheckout
 // shopingCheckout

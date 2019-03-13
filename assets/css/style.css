@@ -19,11 +19,14 @@
   font-family: 'WorkSans-SemiBold';
   src:url('../fonts/WorkSans-ExtraBold.otf') format('truetype');
 }
-
+html{
+  overflow-x: hidden;
+}
 body{
   margin: 0;
   font-family: 'WorkSans-Regular';
   overflow-x: hidden;
+  width: 100%;
 }
 div,main,section{
   background-size: 100% 100%;
@@ -908,6 +911,9 @@ main{
 .whatWeDo>div{
   overflow: hidden;
 }
+.whatWeDo>div:hover{
+  cursor: pointer;
+}
 .whatWeDoJS{
   position: relative;
   width: 14.82vw;
@@ -1028,7 +1034,8 @@ main{
 .gridBox{
   position: absolute;
   display: grid;
-  top: 0px;
+  top: 2vw;
+  transition: 1s;
   width: 52vw;
   height: 44.88vw;
   right: 4.97vw;
@@ -1048,6 +1055,13 @@ main{
 }
 .gridBox img{
   height: 93%;
+}
+
+.gridBoxImage{
+  transition: 2s;
+  top: 2vw;
+  transform: rotate(20deg);
+  opacity: 0.3;
 }
 
 
@@ -1267,6 +1281,11 @@ font-weight: 900;
   bottom: 0px;
   width: 23.23vw;
   height: 30.734vw;
+}
+.leftImageLipstick{
+  transition: 3s;
+  opacity: 0.3;
+  left: -3vw;
 }
 .blurBox{
   z-index: 2;
@@ -2178,6 +2197,7 @@ footer span{
     width: 27vw;
     height: 38vw;
   }
+
   .leftCarArrowBox{
     left: 0px;
     width: 10%;
