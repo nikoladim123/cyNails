@@ -16,6 +16,9 @@ function whatWeDofun(){
   if(whatWeDo.getBoundingClientRect().y < window.innerHeight/100 * 60){
     whatWeDo.style.left ="0";
     whatWeDo.style.width = '80%';
+    setTimeout(()=>{
+      whatWeDo.style.opacity = '1';
+    },2000);
     whatWeSellHfourfun();
   }
 }
@@ -24,8 +27,9 @@ function whatWeDofun(){
 // whatwedo  h4 animation
 var whatWeSellHfour = document.getElementsByClassName('whatWeSellHfour')[0];
 function whatWeSellHfourfun(){
-  whatWeSellHfour.style.marginLeft = '20vw';
-  whatWeSellHfour.style.letterSpacing = '0';
+    setTimeout(()=>{
+      whatWeSellHfour.style.opacity = '1';
+    },2000);
 }
 
 // shopingCheckout

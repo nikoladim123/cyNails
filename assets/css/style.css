@@ -23,6 +23,7 @@
 body{
   margin: 0;
   font-family: 'WorkSans-Regular';
+  overflow-x: hidden;
 }
 div,main,section{
   background-size: 100% 100%;
@@ -780,13 +781,12 @@ main{
   margin-bottom: -2.6vw;
 }
 .whatWeSellHfour{
-  transition: 2s;
-  width: 2000vw;
-  letter-spacing: 100vw;
-  margin-left: 100vw;
+  opacity: 0;
+  transition: 3s;
+  margin-left: 20vw;
 }
 .whatWeSellBnd h4 span{
-  font-family: 'Oranienbaum', serif;
+  font-family: 'Oranienbaum',serif;
 }
 /* BRIDAL SECTION */
 /* .bridalSection{
@@ -886,10 +886,11 @@ main{
 
 /* whatWeDo */
 .whatWeDo{
-  transition: 2s;
+  opacity: 0;
+  transition: 3s;
   position: relative;
   left: 100%;
-  width: 200%;
+  width: 150%;
   height: 45.9vw;
   display: flex;
   justify-content: space-between;
