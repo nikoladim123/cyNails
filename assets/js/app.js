@@ -18,7 +18,7 @@ function whatWeDofun(){
     whatWeDo.style.width = '80%';
     setTimeout(()=>{
       whatWeDo.style.opacity = '1';
-    },2000);
+    },1000);
     whatWeSellHfourfun();
   }
 }
@@ -29,7 +29,7 @@ var whatWeSellHfour = document.getElementsByClassName('whatWeSellHfour')[0];
 function whatWeSellHfourfun(){
     setTimeout(()=>{
       whatWeSellHfour.style.opacity = '1';
-    },2000);
+    },1000);
 }
 
 // shopingCheckout

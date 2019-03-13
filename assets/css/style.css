@@ -782,7 +782,7 @@ main{
 }
 .whatWeSellHfour{
   opacity: 0;
-  transition: 3s;
+  transition: 2s;
   margin-left: 20vw;
 }
 .whatWeSellBnd h4 span{
@@ -887,10 +887,10 @@ main{
 /* whatWeDo */
 .whatWeDo{
   opacity: 0;
-  transition: 3s;
+  transition: 2s;
   position: relative;
-  left: 100%;
-  width: 150%;
+  left: 50%;
+  width: 180%;
   height: 45.9vw;
   display: flex;
   justify-content: space-between;
