@@ -4,6 +4,7 @@ window.onscroll = function(){
   whatWeDofun();
   gridBoxImageFun();
   leftImageLipstickFun();
+  pinkBagFun();
 };
 
 window.onload = function(){
@@ -65,6 +66,19 @@ function leftImageLipstickFun(){
   }
 }
 
+// pinkBag anim
+// pinkBag anim
+// pinkBag anim
+
+var pinkBag = document.getElementsByClassName('pinkBag')[1];
+
+function pinkBagFun(){
+  if(pinkBag.getBoundingClientRect().y < window.innerHeight/100 * 70){
+    pinkBag.style.top= '2.5%';
+    pinkBag.style.transform = 'rotate(0deg)';
+    pinkBag.style.opacity = '1';
+  }
+}
 
 
 // shopingCheckout

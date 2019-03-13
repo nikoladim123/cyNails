@@ -287,7 +287,7 @@ button:hover{
   border-bottom: 1px solid rgb(220,124,181);
 }
 .stickyMenuInside{
-  background-color: rgb(52,11,76,0.85);
+  background-color: rgb(52,11,76,0.97);
   position: absolute;
   left: 0px;
   top: 0px;
@@ -1161,10 +1161,14 @@ main{
 .pinkBag{
   position: absolute;
   left: 1%;
-  top: 2.5%;
+  /* top: 2.5%; */
   width: 8%;
   height: 95%;
   background-image: url('../img/png/pink-bags.png');
+  transition: 2s;
+  top: 4%;
+  transform: rotate(10deg);
+  opacity: 0.3;
 }
 .advertBox p{
   margin-left: 15%;
