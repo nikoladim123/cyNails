@@ -2025,16 +2025,17 @@ footer span{
     width: 45.4vw;
     height: 12.53vw;
     font-size: 18px;
-    background-color: rgb(57,5,46,0.4);
+    background-color: rgb(57,5,46,0.7);
     top: auto;
     left: auto;
     right: 5.292vw;
     bottom: -24vw;
     border: 1.392vw solid white;
+    z-index: 15;
     outline: 1px solid rgb(57,5,46,0.4);
   }
   .shopNow:hover{
-    background-color: rgb(57,5,46,0.7);
+    background-color: rgb(57,5,46,0.4);
   }
   /* .lineDownAnim{
     top:85vh;
