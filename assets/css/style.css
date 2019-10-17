@@ -1820,6 +1820,37 @@ footer span{
 {
   display: none;
 }
+/* arrow to top */
+.arrowToTop{
+  opacity: 0;
+  transition: all 0.75s ease;
+  position: fixed;
+  z-index: 3;
+  width: 2.89vw;
+  height: 2.89vw;
+  background: #e8f0d6;
+  right: 3vw;
+  /* top: 2vw; */
+  bottom: 4vw;
+  transform: rotate(-90deg);
+  display: flex;
+  /* opacity: 0.3; */
+  align-items: center;
+  justify-content: center;
+  border:1px solid #d16381;
+}
+
+.arrowToTop:hover{
+  opacity: 1 !important;
+}
+
+.arrowToTop p{
+  margin: 0 !important;
+  font-size: 2vw;
+  font-weight: 600;
+  transform: scale(0.7,1.3);
+  color: #d16381;
+}
 /* PORTRAIT BREAKPOINT */
 /* PORTRAIT BREAKPOINT */
 /* PORTRAIT BREAKPOINT */
